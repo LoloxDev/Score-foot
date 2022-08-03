@@ -128,16 +128,72 @@
     grid-area: r15; 
 }
 
+#leftGroup .whiteBar:first-of-type{
+    grid-area: whiteB;
+}
+
+#leftGroup .whiteBar:nth-of-type(2){
+    grid-area: whiteB2;
+}
+
+#leftGroup .whiteBar:nth-of-type(3){
+    grid-area: whiteB3;
+}
+
+#leftGroup .whiteBar:nth-of-type(4){
+    grid-area: whiteB4;
+}
+
+#leftGroup .whiteBar:nth-of-type(5){
+    grid-area: whiteB5;
+}
+
+#leftGroup .whiteBar:nth-of-type(6){
+    grid-area: whiteB6;
+}
+
+#leftGroup .whiteBar:nth-of-type(7){
+    grid-area: whiteB7;
+}
+
+#rightGroup .whiteBar:nth-of-type(1){
+    grid-area: whiteB8;
+}
+
+#rightGroup .whiteBar:nth-of-type(2){
+    grid-area: whiteB9;
+}
+
+#rightGroup .whiteBar:nth-of-type(3){
+    grid-area: whiteB10;
+}
+
+#rightGroup .whiteBar:nth-of-type(4){
+    grid-area: whiteB11;
+}
+
+#rightGroup .whiteBar:nth-of-type(5){
+    grid-area: whiteB12;
+}
+
+#rightGroup .whiteBar:nth-of-type(6){
+    grid-area: whiteB13;
+}
+
+#rightGroup .whiteBar:nth-of-type(7){
+    grid-area: whiteB14;
+}
+
+
 /* COULEURS */
 
-.blue{
-    color: midnightblue;
-}
-
 .red{
-    color: red;
+    background-color: red;
 }
 
+.blue{
+    background-color: #1f6bff;
+}
 
 header {
     display: flex;
@@ -179,43 +235,48 @@ header nav ul li:not(:last-child) {
     width: 100%;
     display: grid;
     grid-template-areas: "leftgrp rightgrp";
-    background-color:rgba(33, 33, 33, 0.705);
+    background-color:forestgreen;
     height: 80vh;
     grid-gap: 40px;
+    font-family: 'Monda', sans-serif;
 }
 
 
 
 #leftGroup, #rightGroup{
     display: grid;
+    align-items: center;
+    justify-items: center;
 }
 
 
 #section1 li{
-    background-color: white;
     border-radius: 15px;
     display: flex;
     align-items: center;
     overflow: hidden;
     padding: 5px;
+    height: 40px;
+    max-width: 150px;
+    width: 100%;
 }
 
 #leftGroup{
     grid-template-areas: 
     "l1 . . ."
-    ". l9 . ."
-    "l2 . . ."
-    ". . l13 ."
-    "l3 . . ."
-    ". l10 . ."
-    "l4 . . ."
-    ". . . l15"
-    "l5 . . ."
-    ". l11 . ."
-    "l6 . . ."
-    ". . l14 ."
-    "l7 . . ."
-    ". l12 . ."
+    "whiteB l9 . ."
+    "l2 whiteB5 . ."
+    ". whiteB5 l13 ."
+    "l3 whiteB5 whiteB7 ."
+    "whiteB2 l10 whiteB7 ."
+    "l4 . whiteB7 ."
+    ". . whiteB7 l15"
+    "l5 . whiteB7 ."
+    "whiteB3 l11 whiteB7 ."
+    "l6 whiteB6 whiteB7 ."
+    ". whiteB6 l14 ."
+    "l7 whiteB6 . ."
+    "whiteB4 l12 . ."
     "l8 . . ."
     ;
 }
@@ -223,22 +284,59 @@ header nav ul li:not(:last-child) {
 #rightGroup{
     grid-template-areas: 
     ". . . r1"
-    ". . r9 ."
-    ". . . r2"
-    ". r13 . ."
-    ". . . r3"
-    ". . r10 ."
-    ". . . r4"
-    "r15 . . ."
-    ". . . r5"
-    ". . r11 ."
-    ". . . r6"
-    ". r14 . ."
-    ". . . r7"
-    ". . r12 ."
+    ". . r9 whiteB8"
+    ". . whiteB12 r2"
+    ". r13 whiteB12 ."
+    ". whiteB14 whiteB12 r3"
+    ". whiteB14 r10 whiteB9"
+    ". whiteB14 . r4"
+    "r15 whiteB14 . ."
+    ". whiteB14 . r5"
+    ". whiteB14 r11 whiteB10"
+    ". whiteB14 whiteB13 r6"
+    ". r14 whiteB13 ."
+    ". . whiteB13 r7"
+    ". . r12 whiteB11"
     ". . . r8"
     ;
 }
 
 .leftBorder{
+
+    border-right: solid 1px silver;
+    padding: 7px;
+
 }
+
+.rightBorder{
+
+
+    border-left: solid 1px silver;
+    padding: 7px;
+
+}
+
+#rightGroup li{
+    flex-direction: row-reverse;
+
+}
+
+.coutryBox{
+    margin: auto;
+    
+}
+
+.whiteBar{
+    background-color: white;
+    width: 2px;
+    height: 100%;
+}
+
+#VS {
+    position: absolute;
+    top: 40.5%;
+    left: 50%;
+    margin-left: -64px;
+    width: 65px;
+}
+
