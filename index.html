@@ -13,6 +13,8 @@
       rel="stylesheet"
     />
     <title>Résultats foot</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
   </head>
 
   <body>
@@ -32,100 +34,79 @@
 
     <section id="section1">
       <ul id="leftGroup">
-        <li id="box1" class="red">
+        <li id="box1" class="red drag" draggable="true">
           <div class="leftBorder">1A</div>
           <div class="coutryBox">Uruguay</div>
-          <div class="rightBorder">-</div>
+          <div class="rightBorder tab_input">-</div>
         </li>
         <div class="whiteBar"></div>
-        <li id="box2" class="blue">
+        <li id="box2" class="blue drag" draggable="true">
           <div class="leftBorder">2B</div>
           <div class="coutryBox">Portugal</div>
-          <div class="rightBorder">-</div>
+          <div class="rightBorder tab_input">-</div>
         </li>
 
-        <li id="box3" class="blue">
+        <li id="box3" class="blue drag" draggable="true">
           <div class="leftBorder">1C</div>
           <div class="coutryBox">France</div>
-          <div class="rightBorder">-</div>
+          <div class="rightBorder tab_input">-</div>
         </li>
         <div class="whiteBar"></div>
-        <li id="box4" class="red">
+        <li id="box4" class="red drag" draggable="true">
           <div class="leftBorder">2D</div>
           <div class="coutryBox">Argentina</div>
-          <div class="rightBorder">-</div>
+          <div class="rightBorder tab_input">-</div>
         </li>
 
-        <li id="box5" class="red">
+        <li id="box5" class="red drag" draggable="true">
           <div class="leftBorder">1E</div>
           <div class="coutryBox">Brazil</div>
-          <div class="rightBorder">-</div>
+          <div class="rightBorder tab_input">-</div>
         </li>
         <div class="whiteBar"></div>
-        <li id="box6" class="blue">
+        <li id="box6" class="blue drag" draggable="true">
           <div class="leftBorder">2F</div>
           <div class="coutryBox">Mexico</div>
-          <div class="rightBorder">-</div>
+          <div class="rightBorder tab_input">-</div>
         </li>
 
-        <li id="box7" class="red">
+        <li id="box7" class="red drag" draggable="true">
           <div class="leftBorder">1G</div>
           <div class="coutryBox">Belgium</div>
-          <div class="rightBorder">-</div>
+          <div class="rightBorder tab_input">-</div>
         </li>
         <div class="whiteBar"></div>
-        <li id="box8" class="blue">
+        <li id="box8" class="blue drag" draggable="true">
           <div class="leftBorder">2H</div>
           <div class="coutryBox">Japan</div>
-          <div class="rightBorder">-</div>
+          <div class="rightBorder tab_input">-</div>
         </li>
 
-        <li id="box9" class="red">
-          <div class="leftBorder">2B</div>
-          <div class="coutryBox">Portugal</div>
-          <div class="rightBorder">-</div>
+        <li id="box9" class="red drop">
         </li>
 
         <div class="whiteBar"></div>
 
-        <li id="box10" class="blue">
-          <div class="leftBorder">1C</div>
-          <div class="coutryBox">France</div>
-          <div class="rightBorder">-</div>
+        <li id="box10" class="blue drop">
         </li>
 
-        <li id="box11" class="blue">
-          <div class="leftBorder">2F</div>
-          <div class="coutryBox">Mexico</div>
-          <div class="rightBorder">-</div>
+        <li id="box11" class="blue drop">
         </li>
 
         <div class="whiteBar"></div>
 
-        <li id="box12" class="red">
-          <div class="leftBorder">2H</div>
-          <div class="coutryBox">Japan</div>
-          <div class="rightBorder">-</div>
+        <li id="box12" class="red drop">
         </li>
 
-        <li id="box13" class="blue">
-          <div class="leftBorder">1C</div>
-          <div class="coutryBox">France</div>
-          <div class="rightBorder">-</div>
+        <li id="box13" class="blue drop">
         </li>
 
         <div class="whiteBar"></div>
 
-        <li id="box14" class="red">
-          <div class="leftBorder">2H</div>
-          <div class="coutryBox">Japan</div>
-          <div class="rightBorder">-</div>
+        <li id="box14" class="red drop">
         </li>
 
-        <li id="box15" class="blue">
-          <div class="leftBorder">1C</div>
-          <div class="coutryBox">France</div>
-          <div class="rightBorder">-</div>
+        <li id="box15" class="blue drop">
         </li>
       </ul>
 
@@ -134,108 +115,108 @@
       </div>
 
       <ul id="rightGroup">
-        <li id="box1r" class="red">
+        <li id="box1r" class="red drop" draggable="true">
           <div class="rightBorder">1B</div>
           <div class="coutryBox">Espagne</div>
-          <div class="leftBorder">-</div>
+          <div class="leftBorder tab_input">-</div>
         </li>
 
         <div class="whiteBar"></div>
 
-        <li id="box2r" class="blue">
+        <li id="box2r" class="blue drop" draggable="true">
           <div class="rightBorder">2A</div>
           <div class="coutryBox">Russie</div>
-          <div class="leftBorder">-</div>
+          <div class="leftBorder tab_input">-</div>
         </li>
 
-        <li id="box3r" class="blue">
+        <li id="box3r" class="blue drop" draggable="true">
           <div class="rightBorder">1D</div>
           <div class="coutryBox">Croatie</div>
-          <div class="leftBorder">-</div>
+          <div class="leftBorder tab_input">-</div>
         </li>
 
         <div class="whiteBar"></div>
 
-        <li id="box4r" class="red">
+        <li id="box4r" class="red drop" draggable="true">
           <div class="rightBorder">2C</div>
           <div class="coutryBox">Dannemark</div>
-          <div class="leftBorder">-</div>
+          <div class="leftBorder tab_input">-</div>
         </li>
 
-        <li id="box5r" class="red">
+        <li id="box5r" class="red drop" draggable="true">
           <div class="rightBorder">1F</div>
           <div class="coutryBox">Suède</div>
-          <div class="leftBorder">-</div>
+          <div class="leftBorder tab_input">-</div>
         </li>
 
         <div class="whiteBar"></div>
 
-        <li id="box6r" class="blue">
+        <li id="box6r" class="blue drop" draggable="true">
           <div class="rightBorder">2E</div>
           <div class="coutryBox">Suisse</div>
-          <div class="leftBorder">-</div>
+          <div class="leftBorder tab_input">-</div>
         </li>
 
-        <li id="box7r" class="blue">
+        <li id="box7r" class="blue drop" draggable="true">
           <div class="rightBorder">1H</div>
           <div class="coutryBox">Colombie</div>
-          <div class="leftBorder">-</div>
+          <div class="leftBorder tab_input">-</div>
         </li>
 
         <div class="whiteBar"></div>
 
-        <li id="box8r" class="red">
+        <li id="box8r" class="red drag" draggable="true">
           <div class="rightBorder">2G</div>
           <div class="coutryBox">Angleterre</div>
-          <div class="leftBorder">-</div>
+          <div class="leftBorder tab_input">-</div>
         </li>
 
-        <li id="box9r" class="red">
+        <li id="box9r" class="red drag">
           <div class="rightBorder">1B</div>
           <div class="coutryBox">Espagne</div>
-          <div class="leftBorder">-</div>
+          <div class="leftBorder tab_input">-</div>
         </li>
 
         <div class="whiteBar"></div>
 
-        <li id="box10r" class="blue">
+        <li id="box10r" class="blue drag">
           <div class="rightBorder">1D</div>
           <div class="coutryBox">Croatie</div>
-          <div class="leftBorder">-</div>
+          <div class="leftBorder tab_input">-</div>
         </li>
 
-        <li id="box11r" class="blue">
+        <li id="box11r" class="blue drag">
           <div class="rightBorder">2E</div>
           <div class="coutryBox">Suisse</div>
-          <div class="leftBorder">-</div>
+          <div class="leftBorder tab_input">-</div>
         </li>
 
         <div class="whiteBar"></div>
 
-        <li id="box12r" class="red">
+        <li id="box12r" class="red drag">
           <div class="rightBorder">2G</div>
           <div class="coutryBox">Angleterre</div>
-          <div class="leftBorder">-</div>
+          <div class="leftBorder tab_input">-</div>
         </li>
 
-        <li id="box13r" class="red">
+        <li id="box13r" class="red drag">
           <div class="rightBorder">1B</div>
           <div class="coutryBox">Espagne</div>
-          <div class="leftBorder">-</div>
+          <div class="leftBorder tab_input">-</div>
         </li>
 
         <div class="whiteBar"></div>
 
-        <li id="box14r" class="blue">
+        <li id="box14r" class="blue drag">
           <div class="rightBorder">2G</div>
           <div class="coutryBox">Angleterre</div>
-          <div class="leftBorder">-</div>
+          <div class="leftBorder tab_input">-</div>
         </li>
 
-        <li id="box15r" class="red">
+        <li id="box15r" class="red drag">
           <div class="rightBorder">1B</div>
           <div class="coutryBox">Espagne</div>
-          <div class="leftBorder">-</div>
+          <div class="leftBorder tab_input">-</div>
         </li>
       </ul>
     </section>
