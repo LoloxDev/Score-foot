@@ -1,3 +1,11 @@
+
+body {
+    background-image: url(img/5205447.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+
 /* ATTRIBUTION DES GRID NAMES */
 
 #leftGroup{
@@ -223,16 +231,146 @@ header nav ul {
     height: 100%;
     list-style-type: none;
 }
+
 header nav ul li {
     display: flex;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
+    font-weight: 600;
 }
 
 header nav ul li:not(:last-child) {
     margin-right: 100px;
     margin-left: 100px;
+}
+
+#section2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+marquee {
+    position: absolute;
+    height: 200vh
+}
+
+.ball {
+    top: 0;
+    left: 0;
+    z-index: 10;
+    max-width: 150px;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#groupe img {
+    width: 40px;
+    height: 40px;
+}
+
+h1,
+h3,
+td {
+    background: -webkit-linear-gradient(#eee, #DAA520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #DAA520;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+}
+
+table {
+    background-color: rgba(0, 82, 154, 0.694);
+    border: 1px rgba(112, 173, 226, 0.694);
+    border-radius: 15px;
+    margin-left: 8px;
+}
+
+td {
+    padding: 10px;
+    color: #ffffff;
+
+}
+
+.drapeaux {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#groupe {
+    background-color: #160077;
+    border: 1px #160077;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    width:350px;
+    
+
+}
+
+#groupe p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(#eee, #DAA520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.drapeaux img {
+    padding-right: 8px;
+}
+
+.tableau-participant {
+    background-color: #1600775e;
+    margin-right: 10px;
+}
+
+.tableau-participant td {
+    font-weight: 900;
+    font-size: 10px;
+    padding-right: 5px;
+}
+
+#tableau_score {
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+#groupe {
+    box-shadow: #6aa6ff 5px 10px 18px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+article {
+    color: #DAA520
+}
+
+#score_final .scores_pool {
+    background-color: #160077;
 }
 
 #section1{
