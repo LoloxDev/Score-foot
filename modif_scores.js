@@ -50,6 +50,19 @@ function editabled(item) {
                             localStorage.equipe = JSON.stringify(equipe);
                             /*console.log(JSON.parse(localStorage.matchx));*/
                         }
+
+                        if(id_old.startsWith('box')){
+                            let box = [];
+                            for (let index = 1; index < 30; index++) {
+                                let recupbox = document.getElementById("box"+index).innerHTML;
+                                box.push(recupbox);
+                                
+                            }
+                            localStorage.box = JSON.stringify(box);
+                            /*console.log(JSON.parse(localStorage.matchx));*/
+                        }
+
+
                     }
                     /* on desactive la cellule */
                     element.contentEditable = false;
