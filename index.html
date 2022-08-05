@@ -24,54 +24,83 @@
     </header>
     </nav>
 
+    <marquee behavior="alternate" scrollamount="40">
+        <marquee behavior="alternate" direction="down" scrollamount="30">
+            <img src="img/balle.png" class="ball">
+            <!-- images can be downloaded from the github link in description -->
+        </marquee>
+    </marquee>
+
 
 
     <section id="section2">
+
         <div id="groupe" class="groupeA">
-            <h1>GROUPE A</h1>
+            <h1 class="">GROUPE A</h1>
             <div class="drapeaux">
-                <img src="img/transparent-union-jack-5f133c01c35e56.8770632715950960658002.png" alt="union">
-                <img src="img/kisspng-taiwan-flag-of-the-republic-of-china-flag-of-egypt-taiwan-flag-transparent-background-5a755509a6e516.8842416315176389216836.png"
-                    alt="taiwan">
-                <img src="img/kisspng-france-germany-english-icon-france-flag-png-photos-5a7554d5c89c65.9208819915176388698217.png"
-                    alt="germany">
-                <img src="img/kisspng-flag-of-turkey-flag-of-ukraine-flag-of-wales-5ae1ed33a58425.962533921524755763678.png"
-                    alt"turquie">
+                <table class="tableau-participant">
+                    <tr>
+                        <td><img src="img/transparent-union-jack-5f133c01c35e56.8770632715950960658002.png" alt="union">
+                        </td>
+                        <td><img
+                                src="img/kisspng-taiwan-flag-of-the-republic-of-china-flag-of-egypt-taiwan-flag-transparent-background-5a755509a6e516.8842416315176389216836.png">
+                        </td>
+                        <td><img src="img/kisspng-france-germany-english-icon-france-flag-png-photos-5a7554d5c89c65.9208819915176388698217.png"
+                                alt="germany"></td>
+                        <td><img src="img/kisspng-flag-of-turkey-flag-of-ukraine-flag-of-wales-5ae1ed33a58425.962533921524755763678.png"
+                                alt"turquie"></td>
+                    </tr>
+                    <tr>
+                        <td>Angleterre</td>
+                        <td>Taiwan</td>
+                        <td>France</td>
+                        <td>Turquie</td>
+                    </tr>
+                </table>
             </div>
             <div id="tableau_score">
                 <table>
 
                     <tr>
                         <td><img src="img/transparent-union-jack-5f133c01c35e56.8770632715950960658002.png"></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score1">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score2">0</td>
                         <td><img src="img/kisspng-flag-of-turkey-flag-of-ukraine-flag-of-wales-5ae1ed33a58425.962533921524755763678.png"
                                 alt=""></td>
                     </tr>
                     <tr>
                         <td><img src="img/kisspng-taiwan-flag-of-the-republic-of-china-flag-of-egypt-taiwan-flag-transparent-background-5a755509a6e516.8842416315176389216836.png"
                                 alt=""></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score3">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score4">0</td>
                         <td><img src="img/kisspng-france-germany-english-icon-france-flag-png-photos-5a7554d5c89c65.9208819915176388698217.png"
                                 alt=""></td>
                     </tr>
                     <tr>
-                        <td><img src="img/transparent-union-jack-5f133c01c35e56.8770632715950960658002.png" alt=""></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td><img src="img/transparent-union-jack-5f133c01c35e56.8770632715950960658002.png" alt="">
+                        </td>
+                        <td class="tab_input" id="score5">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score6">0</td>
                         <td><img src="img/kisspng-taiwan-flag-of-the-republic-of-china-flag-of-egypt-taiwan-flag-transparent-background-5a755509a6e516.8842416315176389216836.png"
                                 alt=""></td>
                     </tr>
                     <tr>
                         <td><img src="img/kisspng-flag-of-turkey-flag-of-ukraine-flag-of-wales-5ae1ed33a58425.962533921524755763678.png"
                                 alt=""></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score7">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score8">0</td>
                         <td><img
                                 src="img/kisspng-france-germany-english-icon-france-flag-png-photos-5a7554d5c89c65.9208819915176388698217.png">
                         </td>
@@ -80,18 +109,22 @@
                         <td><img
                                 src="img/kisspng-taiwan-flag-of-the-republic-of-china-flag-of-egypt-taiwan-flag-transparent-background-5a755509a6e516.8842416315176389216836.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score9">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score10">0</td>
                         <td><img
                                 src="img/kisspng-flag-of-turkey-flag-of-ukraine-flag-of-wales-5ae1ed33a58425.962533921524755763678.png">
                         </td>
                     </tr>
                     <tr>
                         <td><img src="img/transparent-union-jack-5f133c01c35e56.8770632715950960658002.png"></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score11">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score12">0</td>
                         <td><img
                                 src="img/kisspng-france-germany-english-icon-france-flag-png-photos-5a7554d5c89c65.9208819915176388698217.png">
                         </td>
@@ -100,24 +133,44 @@
                 </table>
 
             </div>
-            <p>Equipes gagnantes : <br>
-                ..... score : ....pts
-            <br>
-                ..... score : ....pts
-                <br>
-               </p>
+
+            <div id="score_final">
+                <h3>Equipes qualifiées</h3>
+
+                <table class="scores_pool">
+
+                    <tr>
+                        <td><img src="img/7-2-1-number-png.png">A</td>
+                        <td class="tab_input" id="equipe1">Equipe</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/2-2-2-number-png.png">A</td>
+                        <td class="tab_input" id="equipe2">Equipe</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div id="groupe">
             <h1>GROUPE B</h1>
             <div class="drapeaux">
-                <img src="img/kisspng-flag-of-the-united-states-flag-of-canada-first-ste-usa-flag-5acf80b68eacf9.9341318415235483425844.png"
-                    alt="union">
-                <img src="img/kisspng-flag-of-the-philippines-computer-icons-philippine-flag-5b0bc55cbef2e0.8621451915274980767821.png"
-                    alt="taiwan">
-                <img src="img/kisspng-flag-of-thailand-ptc-laboratories-thailand-natio-thailand-5ac49b3ec86b95.7663669315228342388209.png"
-                    alt="germany">
-                <img src="img/kisspng-flag-of-sweden-computer-icons-transparent-icon-sweden-flag-5ab0fa6f139626.9481853915215478870802.png"
-                    alt"turquie">
+                <table class="tableau-participant">
+                    <tr>
+                        <td><img src="img/kisspng-flag-of-the-united-states-flag-of-canada-first-ste-usa-flag-5acf80b68eacf9.9341318415235483425844.png"
+                                alt="union"></td>
+                        <td><img src="img/kisspng-flag-of-the-philippines-computer-icons-philippine-flag-5b0bc55cbef2e0.8621451915274980767821.png"
+                                alt="taiwan"></td>
+                        <td><img src="img/kisspng-flag-of-thailand-ptc-laboratories-thailand-natio-thailand-5ac49b3ec86b95.7663669315228342388209.png"
+                                alt="germany"></td>
+                        <td><img src="img/kisspng-flag-of-sweden-computer-icons-transparent-icon-sweden-flag-5ab0fa6f139626.9481853915215478870802.png"
+                                alt"turquie"></td>
+                    </tr>
+                    <tr>
+                        <td>Etats-Unis</td>
+                        <td>Philippines</td>
+                        <td>Thaïlande</td>
+                        <td>Suède</td>
+                    </tr>
+                </table>
             </div>
             <div id="tableau_score">
                 <table>
@@ -126,45 +179,55 @@
                         <td><img
                                 src="img/kisspng-flag-of-the-united-states-flag-of-canada-first-ste-usa-flag-5acf80b68eacf9.9341318415235483425844.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score13">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score14">0</td>
                         <td><img src="img/kisspng-flag-of-the-philippines-computer-icons-philippine-flag-5b0bc55cbef2e0.8621451915274980767821.png"
                                 alt=""></td>
                     </tr>
                     <tr>
                         <td><img src="img/kisspng-flag-of-the-philippines-computer-icons-philippine-flag-5b0bc55cbef2e0.8621451915274980767821.png"
                                 alt=""></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score15">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score16">0</td>
                         <td><img src="img/kisspng-flag-of-thailand-ptc-laboratories-thailand-natio-thailand-5ac49b3ec86b95.7663669315228342388209.png"
                                 alt=""></td>
                     </tr>
                     <tr>
                         <td><img src="img/kisspng-flag-of-sweden-computer-icons-transparent-icon-sweden-flag-5ab0fa6f139626.9481853915215478870802.png"
                                 alt=""></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score17">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score18">0</td>
                         <td><img src="img/kisspng-flag-of-thailand-ptc-laboratories-thailand-natio-thailand-5ac49b3ec86b95.7663669315228342388209.png"
                                 alt=""></td>
                     </tr>
                     <tr>
                         <td><img src="img/kisspng-flag-of-thailand-ptc-laboratories-thailand-natio-thailand-5ac49b3ec86b95.7663669315228342388209.png"
                                 alt=""></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score19">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score20">0</td>
                         <td><img src="img/kisspng-flag-of-the-united-states-flag-of-canada-first-ste-usa-flag-5acf80b68eacf9.9341318415235483425844.png"
                                 alt=""></td>
                     </tr>
                     <tr>
                         <td><img src="img/kisspng-flag-of-sweden-computer-icons-transparent-icon-sweden-flag-5ab0fa6f139626.9481853915215478870802.png"
                                 alt=""></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score21">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score22">0</td>
                         <td><img
                                 src="img/kisspng-flag-of-the-philippines-computer-icons-philippine-flag-5b0bc55cbef2e0.8621451915274980767821.png">
                         </td>
@@ -172,9 +235,11 @@
                     <tr>
                         <td><img src="img/kisspng-flag-of-the-united-states-flag-of-canada-first-ste-usa-flag-5acf80b68eacf9.9341318415235483425844.png"
                                 alt=""></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score23">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score24">0</td>
                         <td><img
                                 src="img/kisspng-flag-of-sweden-computer-icons-transparent-icon-sweden-flag-5ab0fa6f139626.9481853915215478870802.png">
                         </td>
@@ -183,24 +248,43 @@
                 </table>
 
             </div>
-            <p>Equipes gagnantes : <br>
-                ..... score : ....pts
-            <br>
-                ..... score : ....pts
-                <br>
-               </p>
+            <div id="score_final">
+                <h3>Equipes qualifiées</h3>
+                <table class="scores_pool">
+
+                    <tr>
+                        <td><img src="img/7-2-1-number-png.png">B</td>
+                        <td class="tab_input" id="equipe3">Equipe</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/2-2-2-number-png.png">B</td>
+                        <td class="tab_input" id="equipe4">Equipe</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div id="groupe">
             <h1>GROUPE C</h1>
             <div class="drapeaux">
-                <img src="img/kisspng-flag-of-spain-flag-of-the-united-states-national-f-spain-flags-icon-png-5ab0b60d0c0ff7.1993131215215303810494.png"
-                    alt="union">
-                <img src="img/kisspng-flag-of-russia-clip-art-russia-flag-background-5b2cc7069001a5.9352116015296611905899.png"
-                    alt="taiwan">
-                <img src="img/kisspng-flag-of-portugal-portuguese-cuisine-flags-of-the-w-5affe6030662a4.8162702215267200030262.png"
-                    alt="germany">
-                <img src="img/kisspng-flag-of-peru-flags-of-the-world-flag-of-belgium-5b0047ada1a6a3.9844840915267450056621.png"
-                    alt"turquie">
+                <table class="tableau-participant">
+
+                    <tr>
+                        <td><img src="img/kisspng-flag-of-spain-flag-of-the-united-states-national-f-spain-flags-icon-png-5ab0b60d0c0ff7.1993131215215303810494.png"
+                                alt="union"></td>
+                        <td><img src="img/kisspng-flag-of-russia-clip-art-russia-flag-background-5b2cc7069001a5.9352116015296611905899.png"
+                                alt="taiwan"></td>
+                        <td><img src="img/kisspng-flag-of-portugal-portuguese-cuisine-flags-of-the-w-5affe6030662a4.8162702215267200030262.png"
+                                alt="germany"></td>
+                        <td><img src="img/kisspng-flag-of-peru-flags-of-the-world-flag-of-belgium-5b0047ada1a6a3.9844840915267450056621.png"
+                                alt"turquie"></td>
+                    </tr>
+                    <tr>
+                        <td>Angleterre</td>
+                        <td>Russie</td>
+                        <td>Portugal</td>
+                        <td>Pérou</td>
+                    </tr>
+                </table>
             </div>
             <div id="tableau_score">
                 <table>
@@ -209,54 +293,66 @@
                         <td><img
                                 src="img/kisspng-flag-of-spain-flag-of-the-united-states-national-f-spain-flags-icon-png-5ab0b60d0c0ff7.1993131215215303810494.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score25">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score26">0</td>
                         <td><img src="img/kisspng-flag-of-russia-clip-art-russia-flag-background-5b2cc7069001a5.9352116015296611905899.png"
                                 alt=""></td>
                     </tr>
                     <tr>
                         <td><img src="img/kisspng-flag-of-portugal-portuguese-cuisine-flags-of-the-w-5affe6030662a4.8162702215267200030262.png"
                                 alt=""></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score27">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score28">0</td>
                         <td><img src="img/kisspng-flag-of-peru-flags-of-the-world-flag-of-belgium-5b0047ada1a6a3.9844840915267450056621.png"
                                 alt=""></td>
                     </tr>
                     <tr>
                         <td><img src="img/kisspng-flag-of-spain-flag-of-the-united-states-national-f-spain-flags-icon-png-5ab0b60d0c0ff7.1993131215215303810494.png"
                                 alt=""></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score29">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score30">0</td>
                         <td><img src="img/kisspng-flag-of-portugal-portuguese-cuisine-flags-of-the-w-5affe6030662a4.8162702215267200030262.png"
                                 alt=""></td>
                     </tr>
                     <tr>
                         <td><img src="img/kisspng-flag-of-russia-clip-art-russia-flag-background-5b2cc7069001a5.9352116015296611905899.png"
                                 alt=""></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score31">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score32">0</td>
                         <td><img src="img/kisspng-flag-of-peru-flags-of-the-world-flag-of-belgium-5b0047ada1a6a3.9844840915267450056621.png"
                                 alt=""></td>
                     </tr>
                     <tr>
                         <td><img src="img/kisspng-flag-of-peru-flags-of-the-world-flag-of-belgium-5b0047ada1a6a3.9844840915267450056621.png"
                                 alt=""></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input"id="score33">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score34">0</td>
                         <td><img src="img/kisspng-flag-of-russia-clip-art-russia-flag-background-5b2cc7069001a5.9352116015296611905899.png"
                                 alt="taiwan"></td>
                     </tr>
                     <tr>
                         <td><img src="img/kisspng-flag-of-spain-flag-of-the-united-states-national-f-spain-flags-icon-png-5ab0b60d0c0ff7.1993131215215303810494.png"
                                 alt=""></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score35">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score36">0</td>
                         <td><img
                                 src="img/kisspng-flag-of-portugal-portuguese-cuisine-flags-of-the-w-5affe6030662a4.8162702215267200030262.png">
                         </td>
@@ -265,61 +361,88 @@
                 </table>
 
             </div>
-            <p>Equipes gagnantes : <br>
-                ..... score : ....pts
-            <br>
-                ..... score : ....pts
-                <br>
-               </p>
+            <div id="score_final">
+                <h3>Equipes qualifiées</h3>
+                <table class="scores_pool">
+
+                    <tr>
+                        <td><img src="img/7-2-1-number-png.png">C</td>
+                        <td class="tab_input" id="equipe5">Equipe</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/2-2-2-number-png.png">C</td>
+                        <td class="tab_input" id="equipe6">Equipe</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div id="groupe">
             <h1>GROUPE D</h1>
             <div class="drapeaux">
-                <img src="img/kisspng-flag-of-pakistan-dominion-of-pakistan-national-fla-flag-india-5ac3c11e6c4c33.6603796715227783984436.png"
-                    alt="union">
-                <img src="img/kisspng-flag-of-mexico-national-flag-5aea1393ccbd48.0129586415252898758386.png"
-                    alt="taiwan">
-                <img src="img/kisspng-flag-of-malaysia-flag-patch-malaysia-flags-icon-png-5ab0b5f8e82448.1547049415215303609509.png"
-                    alt="germany">
-                <img src="img/kisspng-flag-of-kenya-flags-of-the-world-computer-icons-turkey-flag-5acfa9075c3418.0629483615235586633777.png"
-                    alt"turquie">
+                <table class="tableau-participant">
+                    <tr>
+                        <td><img src="img/kisspng-flag-of-pakistan-dominion-of-pakistan-national-fla-flag-india-5ac3c11e6c4c33.6603796715227783984436.png"
+                                alt="union"></td>
+                        <td><img src="img/kisspng-flag-of-mexico-national-flag-5aea1393ccbd48.0129586415252898758386.png"
+                                alt="taiwan"></td>
+                        <td><img src="img/kisspng-flag-of-malaysia-flag-patch-malaysia-flags-icon-png-5ab0b5f8e82448.1547049415215303609509.png"
+                                alt="germany"></td>
+                        <td><img src="img/kisspng-flag-of-kenya-flags-of-the-world-computer-icons-turkey-flag-5acfa9075c3418.0629483615235586633777.png"
+                                alt"turquie"></td>
+                    </tr>
+                    <tr>
+                        <td>Pakistan</td>
+                        <td>Mexique</td>
+                        <td>Malaisie</td>
+                        <td>Kenya</td>
+                    </tr>
+                </table>
             </div>
             <div id="tableau_score">
                 <table>
 
                     <tr>
-                        <td><img src="img/kisspng-flag-of-pakistan-dominion-of-pakistan-national-fla-flag-india-5ac3c11e6c4c33.6603796715227783984436.png">
+                        <td><img
+                                src="img/kisspng-flag-of-pakistan-dominion-of-pakistan-national-fla-flag-india-5ac3c11e6c4c33.6603796715227783984436.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score37">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score38">0</td>
                         <td><img src="img/kisspng-flag-of-malaysia-flag-patch-malaysia-flags-icon-png-5ab0b5f8e82448.1547049415215303609509.png"
                                 alt="germany"></td>
                     </tr>
                     <tr>
                         <td><img src="img/kisspng-flag-of-mexico-national-flag-5aea1393ccbd48.0129586415252898758386.png"
                                 alt="taiwan"></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score39">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score40">0</td>
                         <td><img src="img/kisspng-flag-of-kenya-flags-of-the-world-computer-icons-turkey-flag-5acfa9075c3418.0629483615235586633777.png"
                                 alt"turquie"></td>
                     </tr>
                     <tr>
                         <td><img src="img/kisspng-flag-of-malaysia-flag-patch-malaysia-flags-icon-png-5ab0b5f8e82448.1547049415215303609509.png"
                                 alt="germany"></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score41">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score42">0</td>
                         <td><img src="img/kisspng-flag-of-kenya-flags-of-the-world-computer-icons-turkey-flag-5acfa9075c3418.0629483615235586633777.png"
                                 alt"turquie"></td>
                     </tr>
                     <tr>
                         <td><img src="img/kisspng-flag-of-malaysia-flag-patch-malaysia-flags-icon-png-5ab0b5f8e82448.1547049415215303609509.png"
                                 alt="germany"></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score43">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score44">0</td>
                         <td><img
                                 src="img/kisspng-flag-of-mexico-national-flag-5aea1393ccbd48.0129586415252898758386.png">
                         </td>
@@ -327,18 +450,22 @@
                     <tr>
                         <td><img src="img/kisspng-flag-of-pakistan-dominion-of-pakistan-national-fla-flag-india-5ac3c11e6c4c33.6603796715227783984436.png"
                                 alt="union"></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score45">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score46">0</td>
                         <td><img src="img/kisspng-flag-of-kenya-flags-of-the-world-computer-icons-turkey-flag-5acfa9075c3418.0629483615235586633777.png"
                                 alt"turquie"></td>
                     </tr>
                     <tr>
                         <td><img src="img/kisspng-flag-of-mexico-national-flag-5aea1393ccbd48.0129586415252898758386.png"
                                 alt=""></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score47">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score48">0</td>
                         <td><img src="img/kisspng-flag-of-pakistan-dominion-of-pakistan-national-fla-flag-india-5ac3c11e6c4c33.6603796715227783984436.png"
                                 alt="union">
                         </td>
@@ -346,35 +473,59 @@
                     </tr>
                 </table>
 
+            </div>*
+            <div id="score_final">
+                <h3>Equipes qualifiées</h3>
+                <table class="scores_pool">
+
+                    <tr>
+                        <td><img src="img/7-2-1-number-png.png">D</td>
+                        <td class="tab_input" id="equipe7">Equipe</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/2-2-2-number-png.png">D</td>
+                        <td class="tab_input" id="equipe8">Equipe</td>
+                    </tr>
+                </table>
             </div>
-            <p>Equipes gagnantes : <br>
-                ..... score : ....pts
-            <br>
-                ..... score : ....pts
-                <br>
-               </p>
         </div>
         <div id="groupe">
             <h1>GROUPE E</h1>
             <div class="drapeaux">
-                <img src="img/kisspng-flag-of-jordan-flags-of-the-world-flag-of-mexico-a-taiwan-flag-5ad5c6f94cc363.7082702315239595453144.png"
-                    alt="union">
-                <img
-                    src="img/kisspng-flag-of-iraq-flags-of-the-world-flag-of-the-nether-5ae51ccd522886.7633243415249645573365.png">
-                <img
-                    src="img/kisspng-flag-of-iran-national-anthem-of-the-islamic-republ-5aec553343faa2.0966940315254377472785.png">
-                <img
-                    src="img/kisspng-flag-of-indonesia-flag-of-monaco-indonesian-art-fl-5adc1ebd6edf98.4145855315243752294542.png">
+                <table class="tableau-participant">
+                    <tr>
+                        <td><img src="img/kisspng-flag-of-jordan-flags-of-the-world-flag-of-mexico-a-taiwan-flag-5ad5c6f94cc363.7082702315239595453144.png"
+                                alt="union"></td>
+                        <td><img
+                                src="img/kisspng-flag-of-iraq-flags-of-the-world-flag-of-the-nether-5ae51ccd522886.7633243415249645573365.png">
+                        </td>
+                        <td><img
+                                src="img/kisspng-flag-of-iran-national-anthem-of-the-islamic-republ-5aec553343faa2.0966940315254377472785.png">
+                        </td>
+                        <td><img
+                                src="img/kisspng-flag-of-indonesia-flag-of-monaco-indonesian-art-fl-5adc1ebd6edf98.4145855315243752294542.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Palestine</td>
+                        <td>Irak</td>
+                        <td>Iran</td>
+                        <td>Indonésie</td>
+                    </tr>
+                </table>
             </div>
             <div id="tableau_score">
                 <table>
 
                     <tr>
-                        <td><img src="img/kisspng-flag-of-jordan-flags-of-the-world-flag-of-mexico-a-taiwan-flag-5ad5c6f94cc363.7082702315239595453144.png">
+                        <td><img
+                                src="img/kisspng-flag-of-jordan-flags-of-the-world-flag-of-mexico-a-taiwan-flag-5ad5c6f94cc363.7082702315239595453144.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score49">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score50">0</td>
                         <td><img
                                 src="img/kisspng-flag-of-iraq-flags-of-the-world-flag-of-the-nether-5ae51ccd522886.7633243415249645573365.png">
                         </td>
@@ -383,9 +534,11 @@
                         <td><img
                                 src="img/kisspng-flag-of-indonesia-flag-of-monaco-indonesian-art-fl-5adc1ebd6edf98.4145855315243752294542.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score51">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score52">0</td>
                         <td><img src="img/kisspng-flag-of-jordan-flags-of-the-world-flag-of-mexico-a-taiwan-flag-5ad5c6f94cc363.7082702315239595453144.png"
                                 alt"turquie"></td>
                     </tr>
@@ -393,9 +546,11 @@
                         <td><img
                                 src="img/kisspng-flag-of-iraq-flags-of-the-world-flag-of-the-nether-5ae51ccd522886.7633243415249645573365.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score53">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score54">0</td>
                         <td><img src="img/kisspng-flag-of-iran-national-anthem-of-the-islamic-republ-5aec553343faa2.0966940315254377472785.png"
                                 alt"turquie"></td>
                     </tr>
@@ -403,28 +558,36 @@
                         <td><img
                                 src="img/kisspng-flag-of-indonesia-flag-of-monaco-indonesian-art-fl-5adc1ebd6edf98.4145855315243752294542.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
-                        <td><img src="img/kisspng-flag-of-mexico-national-flag-5aea1393ccbd48.0129586415252898758386.png">
+                        <td class="tab_input" id="score55">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score56">0</td>
+                        <td><img
+                                src="img/kisspng-flag-of-mexico-national-flag-5aea1393ccbd48.0129586415252898758386.png">
                         </td>
                     </tr>
                     <tr>
-                        <td><img src="img/kisspng-flag-of-jordan-flags-of-the-world-flag-of-mexico-a-taiwan-flag-5ad5c6f94cc363.7082702315239595453144.png">
+                        <td><img
+                                src="img/kisspng-flag-of-jordan-flags-of-the-world-flag-of-mexico-a-taiwan-flag-5ad5c6f94cc363.7082702315239595453144.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score57">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score58">0</td>
                         <td><img src="img/kisspng-flag-of-iran-national-anthem-of-the-islamic-republ-5aec553343faa2.0966940315254377472785.png"
                                 alt"turquie"></td>
                     </tr>
                     <tr>
                         <td><img src="img/kisspng-flag-of-iraq-flags-of-the-world-flag-of-the-nether-5ae51ccd522886.7633243415249645573365.png"
                                 alt=""></td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
-                        <td><img src="img/kisspng-flag-of-indonesia-flag-of-monaco-indonesian-art-fl-5adc1ebd6edf98.4145855315243752294542.png"
+                        <td class="tab_input" id="score59">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score60">0</td>
+                        <td><img src="img/kisspng-flag-of-iran-national-anthem-of-the-islamic-republ-5aec553343faa2.0966940315254377472785.png"
                                 alt="union">
                         </td>
 
@@ -432,24 +595,47 @@
                 </table>
 
             </div>
-            <p>Equipes gagnantes : <br>
-                ..... score : ....pts
-            <br>
-                ..... score : ....pts
-                <br>
-               </p>
+            <div id="score_final">
+                <h3>Equipes qualifiées</h3>
+                <table class="scores_pool">
+
+                    <tr>
+                        <td><img src="img/7-2-1-number-png.png">E</td>
+                        <td class="tab_input" id="equipe9">Equipe</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/2-2-2-number-png.png">E</td>
+                        <td class="tab_input" id="equipe10">Equipe</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div id="groupe">
             <h1>GROUPE F</h1>
             <div class="drapeaux">
-                <img src="img/kisspng-flag-of-france-flag-of-belgium-flag-of-spain-flag-of-belgium-5b191a170b8352.5091810515283717350472.png"
-                    alt="union">
-                <img
-                    src="img/kisspng-flag-of-denmark-danish-map-islamic-flags-uk-flag-5ad107cbc6eed9.9185631815236484598148.png">
-                <img
-                    src="img/kisspng-flag-of-cuba-national-flag-royalty-free-5b392a54636ad7.2294724715304730444072.png">
-                <img
-                    src="img/kisspng-flag-of-croatia-national-flag-flags-of-the-world-croatia-flag-5b0f06f996a6f2.1882310315277114816171.png">
+                <table class="tableau-participant">
+                    <tr>
+                        <td>
+                            <img src="img/kisspng-flag-of-france-flag-of-belgium-flag-of-spain-flag-of-belgium-5b191a170b8352.5091810515283717350472.png"
+                                alt="union">
+                        </td>
+                        <td><img
+                                src="img/kisspng-flag-of-denmark-danish-map-islamic-flags-uk-flag-5ad107cbc6eed9.9185631815236484598148.png">
+                        </td>
+                        <td><img
+                                src="img/kisspng-flag-of-cuba-national-flag-royalty-free-5b392a54636ad7.2294724715304730444072.png">
+                        </td>
+                        <td><img
+                                src="img/kisspng-flag-of-croatia-national-flag-flags-of-the-world-croatia-flag-5b0f06f996a6f2.1882310315277114816171.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Allemagne</td>
+                        <td>Dannemark</td>
+                        <td>Cuba</td>
+                        <td>Croatie</td>
+                    </tr>
+                </table>
             </div>
             <div id="tableau_score">
                 <table>
@@ -458,9 +644,11 @@
                         <td><img
                                 src="img/kisspng-flag-of-france-flag-of-belgium-flag-of-spain-flag-of-belgium-5b191a170b8352.5091810515283717350472.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score61">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score62">0</td>
                         <td><img
                                 src="img/kisspng-flag-of-cuba-national-flag-royalty-free-5b392a54636ad7.2294724715304730444072.png">
                         </td>
@@ -469,9 +657,11 @@
                         <td><img
                                 src="img/kisspng-flag-of-denmark-danish-map-islamic-flags-uk-flag-5ad107cbc6eed9.9185631815236484598148.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score63">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score64">0</td>
                         <td><img src="img/kisspng-flag-of-cuba-national-flag-royalty-free-5b392a54636ad7.2294724715304730444072.png"
                                 alt"turquie"></td>
                     </tr>
@@ -479,9 +669,11 @@
                         <td><img
                                 src="img/kisspng-flag-of-denmark-danish-map-islamic-flags-uk-flag-5ad107cbc6eed9.9185631815236484598148.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score65">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score66">0</td>
                         <td><img
                                 src="img/kisspng-flag-of-france-flag-of-belgium-flag-of-spain-flag-of-belgium-5b191a170b8352.5091810515283717350472.png">
                         </td>
@@ -490,9 +682,11 @@
                         <td><img
                                 src="img/kisspng-flag-of-croatia-national-flag-flags-of-the-world-croatia-flag-5b0f06f996a6f2.1882310315277114816171.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score67">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score68">0</td>
                         <td><img
                                 src="img/kisspng-flag-of-denmark-danish-map-islamic-flags-uk-flag-5ad107cbc6eed9.9185631815236484598148.png">
                         </td>
@@ -501,9 +695,11 @@
                         <td><img
                                 src="img/kisspng-flag-of-france-flag-of-belgium-flag-of-spain-flag-of-belgium-5b191a170b8352.5091810515283717350472.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score69">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score70">0</td>
                         <td><img
                                 src="img/kisspng-flag-of-croatia-national-flag-flags-of-the-world-croatia-flag-5b0f06f996a6f2.1882310315277114816171.png">
                         </td>
@@ -512,9 +708,11 @@
                         <td><img
                                 src="img/kisspng-flag-of-cuba-national-flag-royalty-free-5b392a54636ad7.2294724715304730444072.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score71">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score72">0</td>
                         <td><img
                                 src="img/kisspng-flag-of-croatia-national-flag-flags-of-the-world-croatia-flag-5b0f06f996a6f2.1882310315277114816171.png">
                         </td>
@@ -523,24 +721,169 @@
                 </table>
 
             </div>
-            <p>Equipes gagnantes : <br>
-            ..... score : ....pts
-        <br>
-            ..... score : ....pts
-            <br>
-           </p>
+            <div id="score_final">
+                <h3>Equipes qualifiées</h3>
+                <table class="scores_pool">
+
+                    <tr>
+                        <td><img src="img/7-2-1-number-png.png">F</td>
+                        <td class="tab_input" id="equipe11">Equipe</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/2-2-2-number-png.png">F</td>
+                        <td class="tab_input" id="equipe12">Equipe</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div id="groupe">
+            <h1>GROUPE G</h1>
+            <div class="drapeaux">
+                <table class="tableau-participant">
+                    <tr>
+                        <td><img src="img/kisspng-flag-of-algeria-flags-of-the-world-flag-of-albania-graph-5ac905836355b8.1855667015231235874069.png"
+                                alt="union"></td>
+                        <td><img
+                                src="img/kisspng-tlos-triple-l-oil-services-flag-of-egypt-2019-af-5ae4518b25b7b1.2593791315249125231545.png">
+                        </td>
+                        <td><img
+                                src="img/kisspng-flag-of-india-flag-of-the-united-states-stock-phot-download-ico-indian-flag-5ab1256e49f6c6.882252001521558894303_1.png">
+                        </td>
+                        <td><img
+                                src="img/kisspng-flag-of-finland-narvi-oy-gallery-of-sovereign-stat-5b17b11e6463d4.1954254415282793264112 (1)_1.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Algérie</td>
+                        <td>Egypte</td>
+                        <td>Afrique Sud</td>
+                        <td>Finlande</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="tableau_score">
+                <table>
+
+                    <tr>
+                        <td><img
+                                src="img/kisspng-flag-of-algeria-flags-of-the-world-flag-of-albania-graph-5ac905836355b8.1855667015231235874069.png">
+                        </td>
+                        <td class="tab_input" id="score73">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score74">0</td>
+                        <td><img
+                                src="img/kisspng-tlos-triple-l-oil-services-flag-of-egypt-2019-af-5ae4518b25b7b1.2593791315249125231545.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img
+                                src="img/kisspng-flag-of-india-flag-of-the-united-states-stock-phot-download-ico-indian-flag-5ab1256e49f6c6.882252001521558894303_1.png">
+                        </td>
+                        <td class="tab_input" id="score75">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score76">0</td>
+                        <td><img src="img/kisspng-flag-of-algeria-flags-of-the-world-flag-of-albania-graph-5ac905836355b8.1855667015231235874069.png"
+                                alt"turquie"></td>
+                    </tr>
+                    <tr>
+                        <td><img
+                                src="img/kisspng-tlos-triple-l-oil-services-flag-of-egypt-2019-af-5ae4518b25b7b1.2593791315249125231545.png">
+                        </td>
+                        <td class="tab_input" id="score77">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score78">0</td>
+                        <td><img src="img/kisspng-flag-of-finland-narvi-oy-gallery-of-sovereign-stat-5b17b11e6463d4.1954254415282793264112 (1)_1.png"
+                                alt"turquie"></td>
+                    </tr>
+                    <tr>
+                        <td><img
+                                src="img/kisspng-flag-of-india-flag-of-the-united-states-stock-phot-download-ico-indian-flag-5ab1256e49f6c6.882252001521558894303_1.png">
+                        </td>
+                        <td class="tab_input" id="score79">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score80">0</td>
+                        <td><img
+                                src="img/kisspng-flag-of-finland-narvi-oy-gallery-of-sovereign-stat-5b17b11e6463d4.1954254415282793264112 (1)_1.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img
+                                src="img/kisspng-flag-of-algeria-flags-of-the-world-flag-of-albania-graph-5ac905836355b8.1855667015231235874069.png">
+                        </td>
+                        <td class="tab_input" id="score81">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score82">0</td>
+                        <td><img src="img/kisspng-flag-of-india-flag-of-the-united-states-stock-phot-download-ico-indian-flag-5ab1256e49f6c6.882252001521558894303_1.png"
+                                alt"turquie"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/kisspng-tlos-triple-l-oil-services-flag-of-egypt-2019-af-5ae4518b25b7b1.2593791315249125231545.png"
+                                alt=""></td>
+                        <td class="tab_input" id="score83">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score84">0</td>
+                        <td><img src="img/kisspng-flag-of-finland-narvi-oy-gallery-of-sovereign-stat-5b17b11e6463d4.1954254415282793264112 (1)_1.png"
+                                alt="union">
+                        </td>
+
+                    </tr>
+                </table>
+
+            </div>
+            <div id="score_final">
+                <h3>Equipes qualifiées</h3>
+                <table class="scores_pool">
+
+                    <tr>
+                        <td><img src="img/7-2-1-number-png.png">G</td>
+                        <td class="tab_input" id="equipe13">Equipe</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/2-2-2-number-png.png">G</td>
+                        <td class="tab_input" id="equipe14">Equipe</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div id="groupe">
             <h1>GROUPE H</h1>
             <div class="drapeaux">
-                <img src="img/kisspng-flag-of-colombia-colombia-flag-5b0bc28b809334.3367030815274973555267.png"
-                    alt="union">
-                <img
-                    src="img/kisspng-flag-of-china-flags-of-asia-computer-icons-china-flags-icon-png-5ab0b6194c4c34.1568905015215303933125.png">
-                <img
-                    src="img/kisspng-flag-of-canada-clip-art-canada-flags-icon-png-5ab0b6092ab2e1.0293342115215303771749.png">
-                <img
-                    src="img/kisspng-flag-of-brazil-flags-of-the-world-flag-of-australi-brazilian-flag-template-download-5ad9222e0c9808.5450387715241795020516.png">
+                <table class="tableau-participant">
+                    <tr>
+
+                        <td><img src="img/kisspng-flag-of-colombia-colombia-flag-5b0bc28b809334.3367030815274973555267.png"
+                                alt="union"></td>
+                        <td><img
+                                src="img/kisspng-flag-of-china-flags-of-asia-computer-icons-china-flags-icon-png-5ab0b6194c4c34.1568905015215303933125.png">
+                        </td>
+                        <td><img
+                                src="img/kisspng-flag-of-canada-clip-art-canada-flags-icon-png-5ab0b6092ab2e1.0293342115215303771749.png">
+                        </td>
+                        <td><img
+                                src="img/kisspng-flag-of-brazil-flags-of-the-world-flag-of-australi-brazilian-flag-template-download-5ad9222e0c9808.5450387715241795020516.png">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Colombie</td>
+                        <td>Chine</td>
+                        <td>Canada</td>
+                        <td>Brésil</td>
+                    </tr>
+                </table>
             </div>
             <div id="tableau_score">
                 <table>
@@ -549,9 +892,11 @@
                         <td><img
                                 src="img/kisspng-flag-of-colombia-colombia-flag-5b0bc28b809334.3367030815274973555267.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score72">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score85">0</td>
                         <td><img
                                 src="img/kisspng-flag-of-canada-clip-art-canada-flags-icon-png-5ab0b6092ab2e1.0293342115215303771749.png">
                         </td>
@@ -560,9 +905,11 @@
                         <td><img
                                 src="img/kisspng-flag-of-china-flags-of-asia-computer-icons-china-flags-icon-png-5ab0b6194c4c34.1568905015215303933125.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score86">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score87">0</td>
                         <td><img src="img/kisspng-flag-of-canada-clip-art-canada-flags-icon-png-5ab0b6092ab2e1.0293342115215303771749.png"
                                 alt"turquie"></td>
                     </tr>
@@ -570,9 +917,11 @@
                         <td><img
                                 src="img/kisspng-flag-of-china-flags-of-asia-computer-icons-china-flags-icon-png-5ab0b6194c4c34.1568905015215303933125.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score88">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score89">0</td>
                         <td><img
                                 src="img/kisspng-flag-of-colombia-colombia-flag-5b0bc28b809334.3367030815274973555267.png">
                         </td>
@@ -581,9 +930,11 @@
                         <td><img
                                 src="img/kisspng-flag-of-brazil-flags-of-the-world-flag-of-australi-brazilian-flag-template-download-5ad9222e0c9808.5450387715241795020516.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score90">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score91">0</td>
                         <td><img
                                 src="img/kisspng-flag-of-china-flags-of-asia-computer-icons-china-flags-icon-png-5ab0b6194c4c34.1568905015215303933125.png">
                         </td>
@@ -592,9 +943,11 @@
                         <td><img
                                 src="img/kisspng-flag-of-colombia-colombia-flag-5b0bc28b809334.3367030815274973555267.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score92">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score93">0</td>
                         <td><img
                                 src="img/kisspng-flag-of-brazil-flags-of-the-world-flag-of-australi-brazilian-flag-template-download-5ad9222e0c9808.5450387715241795020516.png">
                         </td>
@@ -603,9 +956,11 @@
                         <td><img
                                 src="img/kisspng-flag-of-canada-clip-art-canada-flags-icon-png-5ab0b6092ab2e1.0293342115215303771749.png">
                         </td>
-                        <td>0</td>
-                        <td>VS</td>
-                        <td>0</td>
+                        <td class="tab_input" id="score94">0</td>
+                        <td><img
+                                src="img/kisspng-video-games-toy-intel-core-i3-intel-core-i5-25-vs-png-5bd20fd6daf070.9304919215404932708968.png">
+                        </td>
+                        <td class="tab_input" id="score95">0</td>
                         <td><img
                                 src="img/kisspng-flag-of-brazil-flags-of-the-world-flag-of-australi-brazilian-flag-template-download-5ad9222e0c9808.5450387715241795020516.png">
                         </td>
@@ -614,16 +969,26 @@
                 </table>
 
             </div>
-            <p>Equipes gagnantes : <br>
-                ..... score : ....pts
-            <br>
-                ..... score : ....pts
-                <br>
-               </p>
+            <div id="score_final">
+                <h3>Equipes qualifiées</h3>
+                <table class="scores_pool">
+
+                    <tr>
+                        <td><img src="img/7-2-1-number-png.png">H</td>
+                        <td class="tab_input" id="equipe15">Equipe</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/2-2-2-number-png.png">H</td>
+                        <td class="tab_input" id="equipe16">Equipe</td>
+                    </tr>
+                </table>
+            </div>
+
         </div>
 
     </section>
-    
+
+    <script src="modif_scores.js"></script>
 </body>
 
 </html>
