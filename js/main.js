@@ -7,7 +7,7 @@ items.forEach(function (item) {
     item.addEventListener('dragleave', dragleave_handler);
 
   function dragstart_handler(e) {
-    e.dataTransfer.setData("text/plain", e.target.id);
+    e.dataTransfer.setData("text/html", e.target.outerHTML);
   }
 
   function dragover_handler(e) {
@@ -16,9 +16,21 @@ items.forEach(function (item) {
 
   function drop_handler(e) {
     e.preventDefault();
-    var data = e.dataTransfer.getData("text/plain");
-    document
-      .getElementById(e.target.id)
-      .appendChild(document.getElementById(data));
+    if(e.target.classList.contains('drop')) {
+          e.target.innerHTML += e.dataTransfer.getData("text/html");
+    }
+}
+
+function dragenter_handler(e) {
+  if ( e.target.className.includes("drop") ) {
+        e.target.style.background = "silver";
   }
+}
+
+function dragleave_handler(e) {
+  if ( e.target.className.includes("drop") ) {
+    e.target.style.background = "white";
+}
+}
+  
 });

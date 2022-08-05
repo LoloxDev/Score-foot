@@ -195,6 +195,10 @@
     background-color: #1f6bff;
 }
 
+.white{
+    background-color: white;
+}
+
 header {
     display: flex;
     background-color: rgba(33, 33, 33, 0.705);
@@ -255,7 +259,6 @@ header nav ul li:not(:last-child) {
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding: 5px;
     height: 40px;
     max-width: 150px;
     width: 100%;
@@ -334,9 +337,9 @@ header nav ul li:not(:last-child) {
 
 #VS {
     position: absolute;
-    top: 40.5%;
+    top: 42%;
     left: 50%;
-    margin-left: -64px;
-    width: 65px;
+    margin-left: -25px;
+    width: 35px;
 }
 
