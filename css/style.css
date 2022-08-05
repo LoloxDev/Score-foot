@@ -1,6 +1,8 @@
 
 body {
-    background-image: url("../img/5205447.jpg");
+
+    background-image: url(../img/5205447.jpg);
+
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -378,10 +380,12 @@ article {
     width: 100%;
     display: grid;
     grid-template-areas: "leftgrp rightgrp";
-    background-color:forestgreen;
     height: 80vh;
     grid-gap: 40px;
     font-family: 'Monda', sans-serif;
+    overflow: hidden;
+    position: relative;
+    margin-top: 70px;
 }
 
 
@@ -476,7 +480,7 @@ article {
 
 #VS {
     position: absolute;
-    top: 42%;
+    top: 47.5%;
     left: 50%;
     margin-left: -25px;
     width: 35px;
