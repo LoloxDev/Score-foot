@@ -261,7 +261,7 @@ header nav ul li:not(:last-child) {
 
 marquee {
     position: absolute;
-    height: 200vh
+    height: 300vh
 }
 
 .ball {
@@ -293,11 +293,10 @@ td {
     background: -webkit-linear-gradient(#eee, #DAA520);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: #DAA520;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     text-align: center;
-    margin-top: 10px;
+    padding-top: 20px;
 }
 
 table {
@@ -386,6 +385,9 @@ article {
     overflow: hidden;
     position: relative;
     margin-top: 70px;
+}
+#score_final{
+    text-align: center;
 }
 
 
