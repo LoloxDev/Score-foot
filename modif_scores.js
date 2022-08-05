@@ -48,15 +48,18 @@ function editabled(item) {
             /*console.log(JSON.parse(localStorage.matchx));*/
           }
 
-          if (id_old.startsWith("scoreEnd")) {
+          if (id_old.startsWith("Endscore")) {
             console.log("test");
-            let scoreEnd = [];
-            for (let index = 1; index < 30; index++) {
-              let recupscoreEnd = document.getElementById("scoreEnd"+index).innerHTML;
-              scoreEnd.push(recupscoreEnd);
+            let Endscore = [];
+            for (let index = 1; index < 31; index++) {
+                if (document.getElementById("Endscore"+index)!=undefined) {
+              let recupEndscore = document.getElementById("Endscore"+index).innerHTML;
+              Endscore.push(index+":"+recupEndscore);}
             }
-            localStorage.scoreEnd = JSON.stringify(scoreEnd);
-            
+            localStorage.Endscore = JSON.stringify(Endscore);
+            console.log(JSON.parse(localStorage.Endscore));
+
+
           }
         }
         /* on desactive la cellule */
@@ -87,3 +90,11 @@ function input_edit(e) {
 document.querySelectorAll(".tab_input").forEach((element) => {
   element.addEventListener("dblclick", input_edit);
 });
+
+let EndscoreTab = JSON.parse(localStorage.Endscore);
+for (let index = 0; index < EndscoreTab.length; index++){
+    const element = EndscoreTab[index];
+    let element2 = element.split(':');
+    document.getElementById(("Endscore") + (element2[0])).innerHTML = element2[1];
+}
+
