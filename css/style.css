@@ -1,10 +1,11 @@
 
 body {
-    background-image: url(img/5205447.jpg);
+    background-image: url(../img/5205447.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
+}
 
 /* ATTRIBUTION DES GRID NAMES */
 
@@ -76,63 +77,63 @@ body {
     grid-area: l15; 
 }
 
-#box1r{
+#box16{
     grid-area: r1; 
 }
 
-#box2r{
+#box17{
     grid-area: r2; 
 }
 
-#box3r{
+#box18{
     grid-area: r3; 
 }
 
-#box4r{
+#box19{
     grid-area: r4; 
 }
 
-#box5r{
+#box20{
     grid-area: r5; 
 }
 
-#box6r{
+#box21{
     grid-area: r6; 
 }
 
-#box7r{
+#box22{
     grid-area: r7; 
 }
 
-#box8r{
+#box23{
     grid-area: r8; 
 }
 
-#box9r{
+#box24{
     grid-area: r9; 
 }
 
-#box10r{
+#box25{
     grid-area: r10; 
 }
 
-#box11r{
+#box26{
     grid-area: r11; 
 }
 
-#box12r{
+#box27{
     grid-area: r12; 
 }
 
-#box13r{
+#box28{
     grid-area: r13; 
 }
 
-#box14r{
+#box29{
     grid-area: r14; 
 }
 
-#box15r{
+#box30{
     grid-area: r15; 
 }
 
@@ -377,10 +378,12 @@ article {
     width: 100%;
     display: grid;
     grid-template-areas: "leftgrp rightgrp";
-    background-color:forestgreen;
     height: 80vh;
     grid-gap: 40px;
     font-family: 'Monda', sans-serif;
+    overflow: hidden;
+    position: relative;
+    margin-top: 70px;
 }
 
 
@@ -475,7 +478,7 @@ article {
 
 #VS {
     position: absolute;
-    top: 42%;
+    top: 47.5%;
     left: 50%;
     margin-left: -25px;
     width: 35px;
