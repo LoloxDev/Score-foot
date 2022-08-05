@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalizer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monda&display=swap"
+      rel="stylesheet"
+    />
+    <title>Résultats foot</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Equipes</li>
+          <li>Quart de finale</li>
+          <li>Semi-finale</li>
+          <li>Finale</li>
+          <li>Semi-finale</li>
+          <li>Quart de finale</li>
+          <li>Equipes</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="section1">
+      <ul id="leftGroup">
+        <li id="box1" class="red drag" draggable="true">
+          <div class="leftBorder">1A</div>
+          <div class="coutryBox">Uruguay</div>
+          <div class="rightBorder tab_input">-</div>
+        </li>
+        <div class="whiteBar"></div>
+        <li id="box2" class="blue drag" draggable="true">
+          <div class="leftBorder">2B</div>
+          <div class="coutryBox">Portugal</div>
+          <div class="rightBorder tab_input">-</div>
+        </li>
+
+        <li id="box3" class="blue drag" draggable="true">
+          <div class="leftBorder">1C</div>
+          <div class="coutryBox">France</div>
+          <div class="rightBorder tab_input">-</div>
+        </li>
+        <div class="whiteBar"></div>
+        <li id="box4" class="red drag" draggable="true">
+          <div class="leftBorder">2D</div>
+          <div class="coutryBox">Argentina</div>
+          <div class="rightBorder tab_input">-</div>
+        </li>
+
+        <li id="box5" class="red drag" draggable="true">
+          <div class="leftBorder">1E</div>
+          <div class="coutryBox">Brazil</div>
+          <div class="rightBorder tab_input">-</div>
+        </li>
+        <div class="whiteBar"></div>
+        <li id="box6" class="blue drag" draggable="true">
+          <div class="leftBorder">2F</div>
+          <div class="coutryBox">Mexico</div>
+          <div class="rightBorder tab_input">-</div>
+        </li>
+
+        <li id="box7" class="red drag" draggable="true">
+          <div class="leftBorder">1G</div>
+          <div class="coutryBox">Belgium</div>
+          <div class="rightBorder tab_input">-</div>
+        </li>
+        <div class="whiteBar"></div>
+        <li id="box8" class="blue drag" draggable="true">
+          <div class="leftBorder">2H</div>
+          <div class="coutryBox">Japan</div>
+          <div class="rightBorder tab_input">-</div>
+        </li>
+
+        <li id="box9" class="white drop">
+        </li>
+
+        <div class="whiteBar"></div>
+
+        <li id="box10" class="white drop">
+        </li>
+
+        <li id="box11" class="white drop">
+        </li>
+
+        <div class="whiteBar"></div>
+
+        <li id="box12" class="white drop">
+        </li>
+
+        <li id="box13" class="white drop">
+        </li>
+
+        <div class="whiteBar"></div>
+
+        <li id="box14" class="white drop">
+        </li>
+
+        <li id="box15" class="white drop">
+        </li>
+      </ul>
+
+      <div id="VS">
+        <img src="img/vs.png" alt="VS">
+      </div>
+
+      <ul id="rightGroup">
+        <li id="box1r" class="red drop" draggable="true">
+          <div class="rightBorder">1B</div>
+          <div class="coutryBox">Espagne</div>
+          <div class="leftBorder tab_input">-</div>
+        </li>
+
+        <div class="whiteBar"></div>
+
+        <li id="box2r" class="blue drop" draggable="true">
+          <div class="rightBorder">2A</div>
+          <div class="coutryBox">Russie</div>
+          <div class="leftBorder tab_input">-</div>
+        </li>
+
+        <li id="box3r" class="blue drop" draggable="true">
+          <div class="rightBorder">1D</div>
+          <div class="coutryBox">Croatie</div>
+          <div class="leftBorder tab_input">-</div>
+        </li>
+
+        <div class="whiteBar"></div>
+
+        <li id="box4r" class="red drop" draggable="true">
+          <div class="rightBorder">2C</div>
+          <div class="coutryBox">Dannemark</div>
+          <div class="leftBorder tab_input">-</div>
+        </li>
+
+        <li id="box5r" class="red drop" draggable="true">
+          <div class="rightBorder">1F</div>
+          <div class="coutryBox">Suède</div>
+          <div class="leftBorder tab_input">-</div>
+        </li>
+
+        <div class="whiteBar"></div>
+
+        <li id="box6r" class="blue drop" draggable="true">
+          <div class="rightBorder">2E</div>
+          <div class="coutryBox">Suisse</div>
+          <div class="leftBorder tab_input">-</div>
+        </li>
+
+        <li id="box7r" class="blue drop" draggable="true">
+          <div class="rightBorder">1H</div>
+          <div class="coutryBox">Colombie</div>
+          <div class="leftBorder tab_input">-</div>
+        </li>
+
+        <div class="whiteBar"></div>
+
+        <li id="box8r" class="red drag" draggable="true">
+          <div class="rightBorder">2G</div>
+          <div class="coutryBox">Angleterre</div>
+          <div class="leftBorder tab_input">-</div>
+        </li>
+
+        <li id="box9r" class="white drag">
+        </li>
+
+        <div class="whiteBar"></div>
+
+        <li id="box10r" class="white drag">
+        </li>
+
+        <li id="box11r" class="white drag">
+        </li>
+
+        <div class="whiteBar"></div>
+
+        <li id="box12r" class="white drag">
+        </li>
+
+        <li id="box13r" class="white drag">
+        </li>
+
+        <div class="whiteBar"></div>
+
+        <li id="box14r" class="white drag">
+        </li>
+
+        <li id="box15r" class="white drag">
+        </li>
+      </ul>
+    </section>
+
+    <section id="section2"></section>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
