@@ -102,8 +102,9 @@ function editabled(item) {
           }
 
         }
-    });
+    );
 }
+
 /**
  * Action si on touche le bouton entrer du clavier.
  */
