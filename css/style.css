@@ -1,6 +1,7 @@
-
 body {
+
     background-image: url(../img/5205447.jpg);
+
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -9,44 +10,44 @@ body {
 
 /* ATTRIBUTION DES GRID NAMES */
 
-#leftGroup{
+#leftGroup {
     grid-area: leftgrp;
 }
 
-#rightGroup{
+#rightGroup {
     grid-area: rightgrp;
 }
 
-#box1{
-    grid-area: l1; 
+#box1 {
+    grid-area: l1;
 }
 
-#box2{
-    grid-area: l2; 
+#box2 {
+    grid-area: l2;
 }
 
-#box3{
-    grid-area: l3; 
+#box3 {
+    grid-area: l3;
 }
 
-#box4{
-    grid-area: l4; 
+#box4 {
+    grid-area: l4;
 }
 
-#box5{
-    grid-area: l5; 
+#box5 {
+    grid-area: l5;
 }
 
-#box6{
-    grid-area: l6; 
+#box6 {
+    grid-area: l6;
 }
 
-#box7{
-    grid-area: l7; 
+#box7 {
+    grid-area: l7;
 }
 
-#box8{
-    grid-area: l8; 
+#box8 {
+    grid-area: l8;
 }
 
 #empty9{
@@ -77,37 +78,38 @@ body {
     grid-area: l15; 
 }
 
-#box16{
-    grid-area: r1; 
+#box16 {
+    grid-area: r1;
 }
 
-#box17{
-    grid-area: r2; 
+#box17 {
+    grid-area: r2;
 }
 
-#box18{
-    grid-area: r3; 
+#box18 {
+    grid-area: r3;
 }
 
-#box19{
-    grid-area: r4; 
+#box19 {
+    grid-area: r4;
 }
 
-#box20{
-    grid-area: r5; 
+#box20 {
+    grid-area: r5;
 }
 
-#box21{
-    grid-area: r6; 
+#box21 {
+    grid-area: r6;
 }
 
-#box22{
-    grid-area: r7; 
+#box22 {
+    grid-area: r7;
 }
 
-#box23{
-    grid-area: r8; 
+#box23 {
+    grid-area: r8;
 }
+
 
 #empty24{
     grid-area: r9; 
@@ -135,82 +137,83 @@ body {
 
 #empty30{
     grid-area: r15; 
+
 }
 
-#leftGroup .whiteBar:first-of-type{
+#leftGroup .whiteBar:first-of-type {
     grid-area: whiteB;
 }
 
-#leftGroup .whiteBar:nth-of-type(2){
+#leftGroup .whiteBar:nth-of-type(2) {
     grid-area: whiteB2;
 }
 
-#leftGroup .whiteBar:nth-of-type(3){
+#leftGroup .whiteBar:nth-of-type(3) {
     grid-area: whiteB3;
 }
 
-#leftGroup .whiteBar:nth-of-type(4){
+#leftGroup .whiteBar:nth-of-type(4) {
     grid-area: whiteB4;
 }
 
-#leftGroup .whiteBar:nth-of-type(5){
+#leftGroup .whiteBar:nth-of-type(5) {
     grid-area: whiteB5;
 }
 
-#leftGroup .whiteBar:nth-of-type(6){
+#leftGroup .whiteBar:nth-of-type(6) {
     grid-area: whiteB6;
 }
 
-#leftGroup .whiteBar:nth-of-type(7){
+#leftGroup .whiteBar:nth-of-type(7) {
     grid-area: whiteB7;
 }
 
-#rightGroup .whiteBar:nth-of-type(1){
+#rightGroup .whiteBar:nth-of-type(1) {
     grid-area: whiteB8;
 }
 
-#rightGroup .whiteBar:nth-of-type(2){
+#rightGroup .whiteBar:nth-of-type(2) {
     grid-area: whiteB9;
 }
 
-#rightGroup .whiteBar:nth-of-type(3){
+#rightGroup .whiteBar:nth-of-type(3) {
     grid-area: whiteB10;
 }
 
-#rightGroup .whiteBar:nth-of-type(4){
+#rightGroup .whiteBar:nth-of-type(4) {
     grid-area: whiteB11;
 }
 
-#rightGroup .whiteBar:nth-of-type(5){
+#rightGroup .whiteBar:nth-of-type(5) {
     grid-area: whiteB12;
 }
 
-#rightGroup .whiteBar:nth-of-type(6){
+#rightGroup .whiteBar:nth-of-type(6) {
     grid-area: whiteB13;
 }
 
-#rightGroup .whiteBar:nth-of-type(7){
+#rightGroup .whiteBar:nth-of-type(7) {
     grid-area: whiteB14;
 }
 
 
 /* COULEURS */
 
-.red{
+.red {
     background-color: red;
 }
 
-.blue{
+.blue {
     background-color: #1f6bff;
 }
 
-.white{
+.white {
     background-color: white;
 }
 
 header {
     display: flex;
-    background-color: rgba(33, 33, 33, 0.705);
+    background-color: rgba(11, 0, 80, 0.539);
     width: 100%;
     height: 30px;
     position: relative;
@@ -235,16 +238,16 @@ header nav ul {
 
 header nav ul li {
     display: flex;
+    width: 110px;
+    margin-left: 90px;
+    margin-right: 70px;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     font-weight: 600;
 }
 
-header nav ul li:not(:last-child) {
-    margin-right: 100px;
-    margin-left: 100px;
-}
+
 
 #section2 {
     display: flex;
@@ -259,13 +262,15 @@ header nav ul li:not(:last-child) {
 
 marquee {
     position: absolute;
-    height: 200vh
+    width: 100%;
+    height: 310vh
 }
 
 .ball {
     top: 0;
     left: 0;
     z-index: 10;
+    width: 100%;
     max-width: 150px;
     animation: animate 4s linear infinite;
 }
@@ -291,11 +296,10 @@ td {
     background: -webkit-linear-gradient(#eee, #DAA520);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: #DAA520;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     text-align: center;
-    margin-top: 10px;
+    padding-top: 20px;
 }
 
 table {
@@ -323,8 +327,8 @@ td {
     border: 1px #160077;
     border-radius: 15px;
     margin-bottom: 20px;
-    width:350px;
-    
+    width: 350px;
+
 
 }
 
@@ -367,14 +371,69 @@ td {
 }
 
 article {
-    color: #DAA520
+    color: #DAA520;
 }
 
 #score_final .scores_pool {
     background-color: #160077;
 }
 
-#section1{
+
+.btn-hover.color {
+    /* Button gradient color. The gradient have four different main colors, with a gradient between these. Only 2 of these colors will be visible on the button at any point. Upon hover, the background moves to show the other 2 colors  */
+    background-image: linear-gradient(to right, #02067b, #1f0cd1, #2535e7, #193f91);
+    /* Gives the button a shadow for a neon-like glow */
+    box-shadow: 0 4px 15px 0 rgba(66, 66, 208, 0.75);
+}
+
+.btn-hover {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Button size */
+    height: 55px;
+    width: 200px;
+    /* Text size and boldness*/
+    font-size: 16px;
+    font-weight: 600;
+    /* Text color */
+    color: #DAA520;
+    /* Cursor pointer */
+    cursor: pointer;
+    /* Margin around button */
+    margin: 20px;
+    /* Removes default border around buttons */
+    border: none;
+    /* This affects the gradient background size. By putting a background width to be 300% (above 100%), only the beginning portion of this background will be shown. When hovered, the background will shift towards the end, giving the illustion of a moving gradient*/
+    background-size: 300% 100%;
+    /* Curves the button */
+    border-radius: 50px;
+    padding: 20px 50px;
+    /* Transition duration and style */
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    text-align: center;
+}
+
+.btn-hover:hover {
+    /* Changes the start position of the gradient background upon hover, giving the illusion of motion. Feel free to play around with this percentage value to see how it works */
+    background-position: 100% 0;
+    /* Duration of gradient transition */
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+input[type="file"] {
+    display: none;
+}
+#bouton_sauvegarde{
+    left: 50%;
+    margin-left: -350px;
+    position: absolute;
+    z-index: 40;
+    text-align: center;
+}
+#section1 {
     width: 100%;
     display: grid;
     grid-template-areas: "leftgrp rightgrp";
@@ -386,16 +445,21 @@ article {
     margin-top: 70px;
 }
 
+#score_final {
+    text-align: center;
+}
 
 
-#leftGroup, #rightGroup{
+
+#leftGroup,
+#rightGroup {
     display: grid;
     align-items: center;
     justify-items: center;
 }
 
 
-#section1 li{
+#section1 li {
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -405,54 +469,54 @@ article {
     width: 100%;
 }
 
-#leftGroup{
-    grid-template-areas: 
-    "l1 . . ."
-    "whiteB l9 . ."
-    "l2 whiteB5 . ."
-    ". whiteB5 l13 ."
-    "l3 whiteB5 whiteB7 ."
-    "whiteB2 l10 whiteB7 ."
-    "l4 . whiteB7 ."
-    ". . whiteB7 l15"
-    "l5 . whiteB7 ."
-    "whiteB3 l11 whiteB7 ."
-    "l6 whiteB6 whiteB7 ."
-    ". whiteB6 l14 ."
-    "l7 whiteB6 . ."
-    "whiteB4 l12 . ."
-    "l8 . . ."
+#leftGroup {
+    grid-template-areas:
+        "l1 . . ."
+        "whiteB l9 . ."
+        "l2 whiteB5 . ."
+        ". whiteB5 l13 ."
+        "l3 whiteB5 whiteB7 ."
+        "whiteB2 l10 whiteB7 ."
+        "l4 . whiteB7 ."
+        ". . whiteB7 l15"
+        "l5 . whiteB7 ."
+        "whiteB3 l11 whiteB7 ."
+        "l6 whiteB6 whiteB7 ."
+        ". whiteB6 l14 ."
+        "l7 whiteB6 . ."
+        "whiteB4 l12 . ."
+        "l8 . . ."
     ;
 }
 
-#rightGroup{
-    grid-template-areas: 
-    ". . . r1"
-    ". . r9 whiteB8"
-    ". . whiteB12 r2"
-    ". r13 whiteB12 ."
-    ". whiteB14 whiteB12 r3"
-    ". whiteB14 r10 whiteB9"
-    ". whiteB14 . r4"
-    "r15 whiteB14 . ."
-    ". whiteB14 . r5"
-    ". whiteB14 r11 whiteB10"
-    ". whiteB14 whiteB13 r6"
-    ". r14 whiteB13 ."
-    ". . whiteB13 r7"
-    ". . r12 whiteB11"
-    ". . . r8"
+#rightGroup {
+    grid-template-areas:
+        ". . . r1"
+        ". . r9 whiteB8"
+        ". . whiteB12 r2"
+        ". r13 whiteB12 ."
+        ". whiteB14 whiteB12 r3"
+        ". whiteB14 r10 whiteB9"
+        ". whiteB14 . r4"
+        "r15 whiteB14 . ."
+        ". whiteB14 . r5"
+        ". whiteB14 r11 whiteB10"
+        ". whiteB14 whiteB13 r6"
+        ". r14 whiteB13 ."
+        ". . whiteB13 r7"
+        ". . r12 whiteB11"
+        ". . . r8"
     ;
 }
 
-.leftBorder{
+.leftBorder {
 
     border-right: solid 1px silver;
     padding: 7px;
 
 }
 
-.rightBorder{
+.rightBorder {
 
 
     border-left: solid 1px silver;
@@ -460,17 +524,17 @@ article {
 
 }
 
-#rightGroup li{
+#rightGroup li {
     flex-direction: row-reverse;
 
 }
 
-.coutryBox{
+.coutryBox {
     margin: auto;
-    
+
 }
 
-.whiteBar{
+.whiteBar {
     background-color: white;
     width: 2px;
     height: 100%;
@@ -478,9 +542,8 @@ article {
 
 #VS {
     position: absolute;
-    top: 47.5%;
+    top: 43.5%;
     left: 50%;
-    margin-left: -25px;
-    width: 35px;
+    margin-left: -45px;
+    width: 85px;
 }
-

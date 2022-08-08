@@ -1,3 +1,4 @@
+
 let items = document.querySelectorAll(".drop,.drag");
 items.forEach(function (item) {
     item.addEventListener('dragstart', dragstart_handler);
