@@ -260,7 +260,7 @@ header nav ul li:not(:last-child) {
 
 marquee {
     position: absolute;
-    height: 300vh
+    height: 400vh
 }
 
 .ball {
