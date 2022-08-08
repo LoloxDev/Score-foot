@@ -14,26 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=Monda&display=swap"
       rel="stylesheet"
     />
+ 
     <title>Résultats foot</title>
 
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>Equipes</li>
-                <li>Quart de finale</li>
-                <li>Semi-finale</li>
-                <li>Finale</li>
-                <li>Semi-finale</li>
-                <li>Quart de finale</li>
-                <li>Equipes</li>
-            </ul>
-          </nav>
-    </header>
     
-
     <marquee behavior="alternate" scrollamount="40">
         <marquee behavior="alternate" direction="down" scrollamount="30">
             <img src="img/balle.png" class="ball">
@@ -43,6 +30,7 @@
     
     <section id="section1">
       <ul id="leftGroup">
+        <li>EQUIPES</li>
         <li id="box1" class="red drag" draggable="true">
           <div class="leftBorder">1A</div>
           <div class="coutryBox">Uruguay</div>
@@ -1220,9 +1208,21 @@
         </div>
 
     </section>
+    <section class="container_sauvegarde">
+        <div class="button">
+        <input type="file" id="fileToUpload" value="Import">
+          <label for="fileToUpload" type="button" class="btn-hover color">
+            Récupérer
+          </label>
+          <button id="save" type="button" class="btn-hover color">
+            Sauvegarder
+          </button>
+        </div>
+      </section>
 
     <script src="modif_scores.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

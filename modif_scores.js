@@ -97,7 +97,7 @@ for (let index = 0; index < scoreTab.length; index++) {
       ).innerHTML = element;
 }
 /*console.log(localStorage.equipe);
-console.log(JSON.parse(localStorage.equipe)); un tableau contenu dans une chaine de carctères*/ 
+console.log(JSON.parse(localStorage.equipe)); /*un tableau contenu dans une chaine de carctères*/ 
 let equipeTab = JSON.parse(localStorage.equipe);
 for (let index = 0; index < equipeTab.length; index++) {
     const element = equipeTab[index];
@@ -105,3 +105,73 @@ for (let index = 0; index < equipeTab.length; index++) {
         "equipe" + (index+1)
       ).innerHTML = element;
 }
+
+
+function loadLocal() {
+    var scoreFoot = localStorage.getItem('scoreFoot');
+    if(scoreFoot !== undefined && scoreFoot != "") {
+        let values = JSON.parse(scoreFoot);
+        if(values != undefined && values != "") {
+            equipeTab = values.equipeTab;
+            scoreTab = values.scoreTab;
+            addValueTab();
+        }
+    }
+}
+/*
+sauvegarde de la page cree 
+*/
+function saveFile() {
+    let name_file = "new_file_" + Date.now() + ".json";
+    let values = {
+        "score" : scoreTab,
+        "equipe" : equipeTab,
+    }
+    var blob = new Blob([JSON.stringify(values)], { type: "text" });
+    const blobUrl = URL.createObjectURL(blob);
+    
+    var fileLink = document.createElement("a");
+    fileLink.href = blobUrl;
+    
+    fileLink.download = name_file;
+    
+    fileLink.click();
+}
+function loadFiles(event) {
+    let files = event.target.files;
+
+    if (files.length <= 0) {
+        return false;
+    }
+  
+    var fr = new FileReader();
+  
+    fr.onload = function(e) {
+    var result = JSON.parse(e.target.result);
+    scoreTab = result.scoreTab;
+    equipeTab = result.equipeTab;
+    addValueTab();
+  }
+  
+  fr.readAsText(files.item(0));
+}
+function listFind(find) {
+    let values = [];
+    listData.forEach(element => {
+        if(element.scoreTab.toLowerCase().includes(find.toLowerCase()) || 
+            element.equipeTab.toLowerCase().includes(find.toLowerCase()))
+     {
+                values.push(element);
+    }
+    });
+    return values;
+}
+
+
+
+document.getElementById("save").addEventListener("click", saveFile);
+
+// en cas de changement de fichier (ici d'image)
+document.getElementById('fileToUpload').addEventListener('change', loadFiles);
+
+loadLocal();
