@@ -374,10 +374,6 @@ article {
     background-color: #160077;
 }
 
-.container_sauvegarde {
-    display: flex;
-    justify-content: center;
-}
 
 .btn-hover.color {
     /* Button gradient color. The gradient have four different main colors, with a gradient between these. Only 2 of these colors will be visible on the button at any point. Upon hover, the background moves to show the other 2 colors  */
@@ -392,7 +388,7 @@ article {
     height: 55px;
     width: 200px;
     /* Text size and boldness*/
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     /* Text color */
     color: #DAA520;
@@ -426,7 +422,13 @@ article {
 input[type="file"] {
     display: none;
 }
-
+#bouton_sauvegarde{
+    left: 50%;
+    margin-left: -350px;
+    position: absolute;
+    z-index: 40;
+    text-align: center;
+}
 #section1 {
     width: 100%;
     display: grid;
