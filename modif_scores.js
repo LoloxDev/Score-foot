@@ -1,9 +1,14 @@
 /* variables de la page */
 let cellule_old_value = "";
 let cellule_old_item = "0";
+
 let equipeTab = [];
 let scoreTab = [];
 let scoreEndTab = [];
+
+let Endscore = [];
+let emptyscore = [];
+
 
 function editabled(item) {
     document.querySelectorAll(".tab_input").forEach((element) => {
@@ -87,17 +92,13 @@ function editabled(item) {
           }
 
           if (id_old.startsWith("Endscore")) {
-            console.log("test");
-            let Endscore = [];
+            
             for (let index = 1; index < 31; index++) {
                 if (document.getElementById("Endscore"+index)!=undefined) {
               let recupEndscore = document.getElementById("Endscore"+index).innerHTML;
               Endscore.push(index+":"+recupEndscore);}
             }
             localStorage.Endscore = JSON.stringify(Endscore);
-            console.log(JSON.parse(localStorage.Endscore));
-
-
           }
 
         }
@@ -257,9 +258,31 @@ document.querySelectorAll(".delete").forEach(element => {
 });
 
 
+
 loadLocal();
 afficherDonnees();
 
+
+if ( localStorage.emptyscore != undefined) {
+let emptyscoreTab = JSON.parse(localStorage.emptyscore);
+for (let index = 0; index < emptyscoreTab.length; index++) {
+  const element = emptyscoreTab[index];
+  let values = element.split(':');
+  let elementdrag = document.getElementById(values[2]).cloneNode(true);
+  elementdrag.id = values[1];
+  elementdrag.value = "";
+  let scoredrag = elementdrag.querySelector(".score");
+  scoredrag.id = "Endscore" + values[1].split("box")[1];
+  elementdrag.setAttribute("oldId", document.getElementById(values[2]).id);
+  document.getElementById(values[0]).innerHTML=elementdrag.outerHTML;
+  document.querySelectorAll(".tab_input").forEach((element) => {
+  element.addEventListener("dblclick", input_edit);
+  });
+  
+}
+}
+
+if (localStorage.Endscore != undefined) {
 
 let EndscoreTab = JSON.parse(localStorage.Endscore);
 for (let index = 0; index < EndscoreTab.length; index++){
@@ -267,5 +290,4 @@ for (let index = 0; index < EndscoreTab.length; index++){
     let element2 = element.split(':');
     document.getElementById(("Endscore") + (element2[0])).innerHTML = element2[1];
 }
-
-
+}

@@ -50,32 +50,32 @@ body {
     grid-area: l8;
 }
 
-#box9 {
-    grid-area: l9;
+#empty9{
+    grid-area: l9; 
 }
 
-#box10 {
-    grid-area: l10;
+#empty10{
+    grid-area: l10; 
 }
 
-#box11 {
-    grid-area: l11;
+#empty11{
+    grid-area: l11; 
 }
 
-#box12 {
-    grid-area: l12;
+#empty12{
+    grid-area: l12; 
 }
 
-#box13 {
-    grid-area: l13;
+#empty13{
+    grid-area: l13; 
 }
 
-#box14 {
-    grid-area: l14;
+#empty14{
+    grid-area: l14; 
 }
 
-#box15 {
-    grid-area: l15;
+#empty15{
+    grid-area: l15; 
 }
 
 #box16 {
@@ -110,32 +110,34 @@ body {
     grid-area: r8;
 }
 
-#box24 {
-    grid-area: r9;
+
+#empty24{
+    grid-area: r9; 
 }
 
-#box25 {
-    grid-area: r10;
+#empty25{
+    grid-area: r10; 
 }
 
-#box26 {
-    grid-area: r11;
+#empty26{
+    grid-area: r11; 
 }
 
-#box27 {
-    grid-area: r12;
+#empty27{
+    grid-area: r12; 
 }
 
-#box28 {
-    grid-area: r13;
+#empty28{
+    grid-area: r13; 
 }
 
-#box29 {
-    grid-area: r14;
+#empty29{
+    grid-area: r14; 
 }
 
-#box30 {
-    grid-area: r15;
+#empty30{
+    grid-area: r15; 
+
 }
 
 #leftGroup .whiteBar:first-of-type {

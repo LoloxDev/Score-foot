@@ -23,6 +23,43 @@ items.forEach(function (item) {
             element.addEventListener("dblclick", input_edit);
           });
     }
+    
+    let elementdrag = e.target.querySelector(".drag");
+    let scoredrag = e.target.querySelector(".score");
+    let idtarget = this.getAttribute('id');
+    let idtarget2 = this.getAttribute('id').split("empty")[1];
+    var regEmptyBox = new RegExp('empty');
+    idtarget = idtarget.replace(regEmptyBox, 'box');
+    idtarget2 = idtarget2.replace(regEmptyBox, 'Endscore');
+    elementdrag.setAttribute("oldId",elementdrag.id);
+    scoredrag.innerHTML="";
+    elementdrag.id = idtarget;
+    scoredrag.id = "Endscore" + idtarget2;
+    document.querySelectorAll(".tab_input").forEach((element) => {
+      element.addEventListener("dblclick", input_edit);
+
+
+
+      
+    });
+    let emptyscoreSave = emptyscore;
+
+    emptyscore = [];
+    document.querySelectorAll(".drop").forEach(element => {
+      let elementdrag1 = element.querySelector(".drag");
+      if (elementdrag1 != undefined) {
+        console.log(element);
+        console.log(elementdrag1);
+        console.log(elementdrag1.getAttribute("oldId"));
+        if ( elementdrag1.getAttribute("oldId") != undefined ) {
+        emptyscore.push(element.id+":"+elementdrag1.id+":"+elementdrag1.getAttribute("oldId"));
+        localStorage.emptyscore = JSON.stringify(emptyscore);
+      }
+      }
+    });
+    if (emptyscore.length<=0) {
+      emptyscore=emptyscoreSave;
+    }
 }
 
 function dragenter_handler(e) {
