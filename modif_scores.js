@@ -4,7 +4,6 @@ let cellule_old_item = "0";
 
 let equipeTab = [];
 let scoreTab = [];
-let scoreEndTab = [];
 
 let Endscore = [];
 let emptyscore = [];
@@ -17,7 +16,7 @@ function editabled(item) {
         if (element.id != item.id || element.id != cellule_old_item) {
             /* verifier que l'element n'est pas identique a la verion cliquer avant le changement */
             if (cellule_old_item == element.id) {
-                //console.log('vfffc');
+       
                 /* si c'est d'une version cliquer avant */
                 /* on recupere les anciennes informations (en cas d'erreur) */
                 let value_old = cellule_old_value;
@@ -29,7 +28,7 @@ function editabled(item) {
                 cellule_old_item = "0";
                 /* si on a modifier la valeur */
                 if (modif) {
-                    //console.log('cc');
+                 
                     /* on modifier les valeur dans la base */
                     if (id_old.startsWith("score")) {
                         let score = [];
@@ -65,44 +64,33 @@ function editabled(item) {
                             let recupscoreEnd = document.getElementById("scoreEnd" + index).innerHTML;
                             scoreEnd.push(recupscoreEnd);
                         }
-                        scoreEndTab = scoreEnd;
                         saveLocal();
 
 
                     }
                 }
+
+                if (id_old.startsWith("Endscore")) {
+
+                    for (let index = 1; index < 31; index++) {
+                        if (document.getElementById("Endscore" + index) != undefined) {
+                            let recupEndscore = document.getElementById("Endscore" + index).innerHTML;
+
+                            Endscore.push(index + ":" + recupEndscore);
+                        }
+                    }
+                    saveLocal();
+                    //localStorage.Endscore = JSON.stringify(Endscore);
+                }
                 /* on desactive la cellule */
                 element.contentEditable = false;
             }
 
-            localStorage.matchx = JSON.stringify(score);
+            //localStorage.matchx = JSON.stringify(score);
             /*console.log(JSON.parse(localStorage.matchx));*/
-          }
-
-          if (id_old.startsWith("equipe")) {
-            let equipe = [];
-            for (let index = 1; index < 17; index++) {
-              let recupEquipe = document.getElementById(
-                "equipe" + index
-              ).innerHTML;
-              equipe.push(recupEquipe);
-            }
-            localStorage.equipe = JSON.stringify(equipe);
-            /*console.log(JSON.parse(localStorage.matchx));*/
-          }
-
-          if (id_old.startsWith("Endscore")) {
-            
-            for (let index = 1; index < 31; index++) {
-                if (document.getElementById("Endscore"+index)!=undefined) {
-              let recupEndscore = document.getElementById("Endscore"+index).innerHTML;
-              Endscore.push(index+":"+recupEndscore);}
-            }
-            localStorage.Endscore = JSON.stringify(Endscore);
-          }
-
         }
-    );
+
+    });
 }
 
 /**
@@ -130,15 +118,16 @@ document.querySelectorAll(".tab_input").forEach((element) => {
 
 function afficherDonnees() {
     //localStorage.scoreEnd = JSON.stringify(scoreEndTab);
-     /*permet d'afficher les données*/
-     if (localStorage.getItem("score") != undefined && localStorage.getItem("score") != null) {
-        scoreEndTab = JSON.parse(localStorage.getItem("score"));
-        if(scoreEndTab != undefined) {
-            for (let index = 0; index < scoreTab.length; index++) {
-                /*const element = scoreTab[index];
-                document.getElementById(
-                    "score" + (index + 1)
-                ).innerHTML = element;*/
+    /*permet d'afficher les données*/
+    if (localStorage.getItem("Endscore") != undefined && localStorage.getItem("Endscore") != null) {
+        EndscoreTab = JSON.parse(localStorage.getItem("Endscore"));
+        if(EndscoreTab != undefined && EndscoreTab != null && EndscoreTab != "null") {
+            for (let index = 0; index < EndscoreTab.length; index++) {
+                const element = EndscoreTab[index];
+                let element2 = element.split(':');
+                if(document.getElementById(("Endscore") + (element2[0])) != undefined) {
+                    document.getElementById(("Endscore") + (element2[0])).innerHTML = element2[1];
+                }
             }
         }
     }
@@ -146,7 +135,7 @@ function afficherDonnees() {
     /*permet d'afficher les données*/
     if (localStorage.getItem("matchx") != undefined && localStorage.getItem("matchx") != null) {
         scoreTab = JSON.parse(localStorage.getItem("matchx"));
-        if(scoreTab != undefined) {
+        if (scoreTab != undefined && scoreTab != null && scoreTab != "null") {
             for (let index = 0; index < scoreTab.length; index++) {
                 const element = scoreTab[index];
                 document.getElementById(
@@ -159,7 +148,7 @@ function afficherDonnees() {
     console.log(JSON.parse(localStorage.equipe)); /*un tableau contenu dans une chaine de carctères*/
     if (localStorage.getItem("equipe") != undefined && localStorage.getItem("equipe") != null) {
         equipeTab = JSON.parse(localStorage.getItem("equipe"));
-        if(equipeTab != undefined) {
+        if (equipeTab != undefined && equipeTab != null && equipeTab != "null") {
             for (let index = 0; index < equipeTab.length; index++) {
                 const element = equipeTab[index];
                 document.getElementById(
@@ -173,13 +162,28 @@ function afficherDonnees() {
 function saveLocal() {
     localStorage.matchx = JSON.stringify(scoreTab);
     localStorage.equipe = JSON.stringify(equipeTab);
-    localStorage.score = JSON.stringify(scoreEndTab);
+    localStorage.Endscore = JSON.stringify(Endscore);
+    localStorage.emptyscore = JSON.stringify(emptyscore);
 
 }
+
 function loadLocal() {
-    scoreTab = localStorage.getItem("matchx");
-    equipeTab = localStorage.getItem("equipe");
-    scoreEndTab = localStorage.getItem("score");
+    scoreTab = JSON.parse(localStorage.getItem("matchx"));
+    equipeTab = JSON.parse(localStorage.getItem("equipe"));
+    Endscore = JSON.parse(localStorage.getItem("Endscore"));
+    emptyscore = JSON.parse(localStorage.getItem("emptyscore"));
+    if(!(scoreTab != undefined && scoreTab != "null")) {
+        scoreTab = [];
+    }
+    if(!(equipeTab != undefined && equipeTab != "null")) {
+        equipeTab = [];
+    }
+    if(!(Endscore != undefined && Endscore != "null")) {
+        Endscore = [];
+    }
+    if(!(emptyscore != undefined && emptyscore != "null")) {
+        emptyscore = [];
+    }
 }
 /*
 sauvegarde de la page cree 
@@ -187,9 +191,10 @@ sauvegarde de la page cree
 function saveFile() {
     let name_file = "new_file_" + Date.now() + ".json";
     let scoreFoot = {
-        "score": scoreEndTab,
-        "equipe": equipeTab,
-        "matchx": scoreTab,
+        matchx : scoreTab,
+        equipe: equipeTab,
+        Endscore: Endscore,
+        emptyscore: emptyscore,
     }
     var blob = new Blob([JSON.stringify(scoreFoot)], { type: "text" });
     const blobUrl = URL.createObjectURL(blob);
@@ -214,22 +219,26 @@ function loadFiles(event) {
         var result = JSON.parse(e.target.result);
         scoreTab = result.matchx;
         equipeTab = result.equipe;
-        scoreEndTab = result.score;
-        if(scoreTab == undefined) {
+        Endscore = result.Endscore;
+        emptyscore = result.emptyscore;
+        if (scoreTab == undefined) {
             scoreTab = [];
         }
-        if(equipeTab == undefined) {
+        if (equipeTab == undefined) {
             equipeTab = [];
         }
-        if(scoreEndTab == undefined) {
-            scoreEndTab = [];
+        if (Endscore == undefined) {
+            Endscore = [];
+        }
+        if (emptyscore == undefined) {
+            emptyscore = [];
         }
         saveLocal();
         afficherDonnees();
     }
 
     fr.readAsText(files.item(0));
-    
+
 }
 function listFind(find) {
     let scoreFoot = [];
@@ -254,7 +263,9 @@ document.querySelectorAll(".delete").forEach(element => {
     element.addEventListener("click", function (e) {
         localStorage.removeItem('matchx');
         localStorage.removeItem('equipe');
-    
+        localStorage.removeItem('Endscore');
+        localStorage.removeItem('emptyscore');
+
     });
 });
 
@@ -264,31 +275,39 @@ loadLocal();
 afficherDonnees();
 
 
-if ( localStorage.emptyscore != undefined) {
-let emptyscoreTab = JSON.parse(localStorage.emptyscore);
-for (let index = 0; index < emptyscoreTab.length; index++) {
-  const element = emptyscoreTab[index];
-  let values = element.split(':');
-  let elementdrag = document.getElementById(values[2]).cloneNode(true);
-  elementdrag.id = values[1];
-  elementdrag.value = "";
-  let scoredrag = elementdrag.querySelector(".score");
-  scoredrag.id = "Endscore" + values[1].split("box")[1];
-  elementdrag.setAttribute("oldId", document.getElementById(values[2]).id);
-  document.getElementById(values[0]).innerHTML=elementdrag.outerHTML;
-  document.querySelectorAll(".tab_input").forEach((element) => {
-  element.addEventListener("dblclick", input_edit);
-  });
-  
-}
+if (localStorage.emptyscore != undefined) {
+    let emptyscoreTab = JSON.parse(localStorage.emptyscore);
+    if(emptyscoreTab != undefined && emptyscoreTab != null && emptyscoreTab != "null") {
+        for (let index = 0; index < emptyscoreTab.length; index++) {
+            const element = emptyscoreTab[index];
+            let values = element.split(':');
+            let elementdrag = document.getElementById(values[2]).cloneNode(true);
+            elementdrag.id = values[1];
+            elementdrag.value = "";
+            let scoredrag = elementdrag.querySelector(".score");
+            if(scoredrag != undefined) {
+                scoredrag.id = "Endscore" + values[1].split("box")[1];
+                elementdrag.setAttribute("oldId", document.getElementById(values[2]).id);
+                document.getElementById(values[0]).innerHTML = elementdrag.outerHTML;
+                document.querySelectorAll(".tab_input").forEach((element) => {
+                    element.addEventListener("dblclick", input_edit);
+                });
+            }
+
+        }
+    }
 }
 
 if (localStorage.Endscore != undefined) {
 
-let EndscoreTab = JSON.parse(localStorage.Endscore);
-for (let index = 0; index < EndscoreTab.length; index++){
-    const element = EndscoreTab[index];
-    let element2 = element.split(':');
-    document.getElementById(("Endscore") + (element2[0])).innerHTML = element2[1];
-}
+    let EndscoreTab = JSON.parse(localStorage.Endscore);
+    if(EndscoreTab != undefined && EndscoreTab != null && EndscoreTab != "null") {
+        for (let index = 0; index < EndscoreTab.length; index++) {
+            const element = EndscoreTab[index];
+            let element2 = element.split(':');
+            if(document.getElementById(("Endscore") + (element2[0])) != undefined) {
+                document.getElementById(("Endscore") + (element2[0])).innerHTML = element2[1];
+            }
+        }
+    }
 }
