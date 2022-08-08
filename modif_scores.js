@@ -217,7 +217,9 @@ document.getElementById('fileToUpload').addEventListener('change', loadFiles);
 
 document.querySelectorAll(".delete").forEach(element => {
     element.addEventListener("click", function (e) {
-        localStorage.removeItem('scoreFoot');
+        localStorage.removeItem('matchx');
+        localStorage.removeItem('equipe');
+    
     });
 });
 
