@@ -39,6 +39,7 @@ function editabled(item) {
                         /*console.log(JSON.parse(localStorage.matchx));*/
                     }
 
+
                     if (id_old.startsWith("equipe")) {
                         let equipe = [];
                         for (let index = 1; index < 17; index++) {
@@ -68,6 +69,37 @@ function editabled(item) {
                 /* on desactive la cellule */
                 element.contentEditable = false;
             }
+
+            localStorage.matchx = JSON.stringify(score);
+            /*console.log(JSON.parse(localStorage.matchx));*/
+          }
+
+          if (id_old.startsWith("equipe")) {
+            let equipe = [];
+            for (let index = 1; index < 17; index++) {
+              let recupEquipe = document.getElementById(
+                "equipe" + index
+              ).innerHTML;
+              equipe.push(recupEquipe);
+            }
+            localStorage.equipe = JSON.stringify(equipe);
+            /*console.log(JSON.parse(localStorage.matchx));*/
+          }
+
+          if (id_old.startsWith("Endscore")) {
+            console.log("test");
+            let Endscore = [];
+            for (let index = 1; index < 31; index++) {
+                if (document.getElementById("Endscore"+index)!=undefined) {
+              let recupEndscore = document.getElementById("Endscore"+index).innerHTML;
+              Endscore.push(index+":"+recupEndscore);}
+            }
+            localStorage.Endscore = JSON.stringify(Endscore);
+            console.log(JSON.parse(localStorage.Endscore));
+
+
+          }
+
         }
     });
 }
@@ -93,6 +125,7 @@ function input_edit(e) {
 document.querySelectorAll(".tab_input").forEach((element) => {
     element.addEventListener("dblclick", input_edit);
 });
+
 function afficherDonnees() {
     //localStorage.scoreEnd = JSON.stringify(scoreEndTab);
      /*permet d'afficher les données*/
@@ -226,3 +259,13 @@ document.querySelectorAll(".delete").forEach(element => {
 
 loadLocal();
 afficherDonnees();
+
+
+let EndscoreTab = JSON.parse(localStorage.Endscore);
+for (let index = 0; index < EndscoreTab.length; index++){
+    const element = EndscoreTab[index];
+    let element2 = element.split(':');
+    document.getElementById(("Endscore") + (element2[0])).innerHTML = element2[1];
+}
+
+

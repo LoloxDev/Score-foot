@@ -19,6 +19,9 @@ items.forEach(function (item) {
     e.preventDefault();
     if(e.target.classList.contains('drop')) {
           e.target.innerHTML += e.dataTransfer.getData("text/html");
+          document.querySelectorAll(".tab_input").forEach((element) => {
+            element.addEventListener("dblclick", input_edit);
+          });
     }
 }
 
