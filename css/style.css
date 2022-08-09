@@ -6,6 +6,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     position: relative;
+    z-index: 2;
 }
 
 /* ATTRIBUTION DES GRID NAMES */
@@ -200,11 +201,11 @@ body {
 /* COULEURS */
 
 .red {
-    background-color: red;
+    background-color: rgb(255, 34, 34);
 }
 
 .blue {
-    background-color: #1f6bff;
+    background-color: #002060;
 }
 
 .white {
@@ -254,7 +255,7 @@ header nav ul li {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 100px;
-
+    font-family: 'Monda', sans-serif;
     position: relative;
     overflow: hidden;
 }
@@ -295,8 +296,7 @@ td {
     background: -webkit-linear-gradient(#eee, #DAA520);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     text-align: center;
     padding-top: 20px;
 }
@@ -337,24 +337,24 @@ td {
     background: -webkit-linear-gradient(#eee, #DAA520);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     text-align: center;
 }
 
 .drapeaux img {
     padding-right: 8px;
+    padding-left: 8px;
 }
 
 .tableau-participant {
     background-color: #1600775e;
-    margin-right: 10px;
+
 }
 
 .tableau-participant td {
     font-weight: 900;
     font-size: 10px;
-    padding-right: 5px;
+   
 }
 
 #tableau_score {
@@ -364,7 +364,7 @@ td {
 }
 
 #groupe {
-    box-shadow: #6aa6ff 5px 10px 18px;
+    box-shadow: #6aa6ff 5px 7px 10px;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -377,7 +377,9 @@ article {
     background-color: #160077;
 }
 
-
+.button{
+    padding: 20px 50px;
+}
 .btn-hover.color {
     /* Button gradient color. The gradient have four different main colors, with a gradient between these. Only 2 of these colors will be visible on the button at any point. Upon hover, the background moves to show the other 2 colors  */
     background-image: linear-gradient(to right, #02067b, #1f0cd1, #2535e7, #193f91);
@@ -386,7 +388,7 @@ article {
 }
 
 .btn-hover {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Monda', sans-serif;
     /* Button size */
     height: 55px;
     width: 200px;
@@ -431,6 +433,10 @@ input[type="file"] {
     position: absolute;
     z-index: 40;
     text-align: center;
+    padding-bottom: 25px;
+}
+.container_sauvegarde{
+    margin-top: 50px;
 }
 #section1 {
     width: 100%;
@@ -443,7 +449,15 @@ input[type="file"] {
     position: relative;
     margin-top: 70px;
 }
-
+.image_coupe{
+    width: 350px;
+    position: absolute;
+    z-index: 2;
+    top: -50px;
+    left: 50%;
+    margin-left: -190px;
+    filter: brightness(200%);
+}
 #score_final {
     text-align: center;
 }
@@ -466,6 +480,7 @@ input[type="file"] {
     height: 40px;
     max-width: 140px;
     width: 140px;
+    color: #ffffff;
 }
 
 #leftGroup {
@@ -513,6 +528,7 @@ input[type="file"] {
     border-right: solid 1px silver;
     padding: 7px;
 
+
 }
 
 .rightBorder {
@@ -534,7 +550,7 @@ input[type="file"] {
 }
 
 .whiteBar {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.789);
     width: 2px;
     height: 100%;
 }
