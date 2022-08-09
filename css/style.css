@@ -1,7 +1,7 @@
 body {
 
     background-image: url(../img/5205447.jpg);
-
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -18,6 +18,35 @@ body {
 #rightGroup {
     grid-area: rightgrp;
 }
+
+#equipesL{
+grid-area: equipesL
+}
+
+#quartL{
+    grid-area: quartL
+
+}
+
+#semiL{
+    grid-area: semiL
+
+}
+
+#equipesR{
+    grid-area: equipesR
+}
+
+#quartR{
+    grid-area: quartR
+
+}
+
+#semiR{
+    grid-area: semiR
+
+}
+
 
 #box1 {
     grid-area: l1;
@@ -442,18 +471,17 @@ input[type="file"] {
     width: 100%;
     display: grid;
     grid-template-areas: "leftgrp rightgrp";
-    height: 80vh;
+    height: 100vh;
     grid-gap: 40px;
     font-family: 'Monda', sans-serif;
     overflow: hidden;
     position: relative;
-    margin-top: 70px;
 }
 .image_coupe{
     width: 350px;
     position: absolute;
     z-index: 2;
-    top: -50px;
+    top: 5%;
     left: 50%;
     margin-left: -190px;
     filter: brightness(200%);
@@ -481,10 +509,13 @@ input[type="file"] {
     max-width: 140px;
     width: 140px;
     color: #ffffff;
+    justify-content: center;
+    
 }
 
 #leftGroup {
     grid-template-areas:
+        "equipesL quartL semiL ."
         "l1 . . ."
         "whiteB l9 . ."
         "l2 whiteB5 . ."
@@ -505,6 +536,7 @@ input[type="file"] {
 
 #rightGroup {
     grid-template-areas:
+        ". semiR quartR equipesR"
         ". . . r1"
         ". . r9 whiteB8"
         ". . whiteB12 r2"
@@ -557,10 +589,10 @@ input[type="file"] {
 
 #VS {
     position: absolute;
-    top: 47.5%;
+    top: 54.5%;
     left: 50%;
-    margin-left: -19px;
-    width: 38px;
+    margin-left: -30px;
+    width: 65px;
 }
 
 /* LOADER */
@@ -574,4 +606,9 @@ input[type="file"] {
     height : 100%;
     width : 100%;
     cursor : wait;
+    }
+
+    #quartL,#semiL,#equipesL,#quartR,#semiR,#equipesR{
+        margin: 50px 0;
+        text-shadow: white 1px 1px 20px;
     }
