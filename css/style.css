@@ -546,3 +546,16 @@ input[type="file"] {
     margin-left: -19px;
     width: 38px;
 }
+
+/* LOADER */
+
+.loader {
+    position : fixed;
+    z-index: 9999;
+    background : url('../img/loader.gif') 50% no-repeat, radial-gradient(circle, rgba(132,6,63,1) 0%, rgba(36,2,20,1) 22%, rgba(36,2,20,1) 100%, rgba(124,6,59,1) 100%);;
+    top : 0px;
+    left : 0px;
+    height : 100%;
+    width : 100%;
+    cursor : wait;
+    }

@@ -34,6 +34,7 @@
                   </nav>
             </header>
             
+            <div class="loader"> Loader </div>
     
     <marquee behavior="alternate" scrollamount="40">
         <marquee behavior="alternate" direction="down" scrollamount="30">
@@ -1181,6 +1182,14 @@
 
     <script src="modif_scores.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- FADE OUT pour LOADER -->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+$(".loader").fadeOut(2500); })
+</script>
 
 </body>
 
